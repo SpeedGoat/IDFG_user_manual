@@ -1,0 +1,3 @@
+# Sightability {#sight}
+
+Information about running sightability models goes here.
