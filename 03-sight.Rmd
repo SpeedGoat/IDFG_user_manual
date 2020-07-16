@@ -1,3 +1,33 @@
 # Sightability {#sight}
 
-Information about running sightability models goes here.
+Sightability models use aerial survey data combined with detection probability 
+models to estimate total abundance within a sampling unit.
+
+## Data Entry {#sight-de}
+
+To enter sightability data, click Sightability then Metadata Entry in the 
+sidebar. You can probabily figure it out from there.
+
+## GPS Data Entry {#sight-gps}
+
+Yeesh I don't even know.
+
+## Model Options {#sight-options}
+
+Explain model and data options, subsetting, etc.
+
+## Running a model {#sight-model}
+
+Click the button ya dingus.
+
+## Model Output {#sight-output}
+
+Explain estimates and covariates in tables tab.
+
+## Admin Tab {#sight-admin}
+
+Add to ipm_db.
+
+## Step-By-Step Sightability Model Example {#sight-ex}
+
+Straight from Charlie's google doc.
