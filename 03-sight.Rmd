@@ -3,31 +3,52 @@
 Sightability models use aerial survey data combined with detection probability 
 models to estimate total abundance within a sampling unit.
 
-## Data Entry {#sight-de}
+## Sightability Data Entry {#sight-de}
 
-To enter sightability data, click Sightability then Metadata Entry in the 
-sidebar. You can probabily figure it out from there.
+### GPS Data Entry
 
-## GPS Data Entry {#sight-gps}
+The first step in entering sightability data is to upload GPS data for your survey (if you don't have a .csv file containing GPS data for your survey you can skip this step). Click **Sightability** in the sidebar, then **GPS Data Entry**. Use the **Browse** button to select the GPS file on your computer, and the data from the file will appear on the map and in the table to the right. Review the data in both the map and the table to ensure that everything is accurate. If corrections need to be made open the file on your computer, make the necessary changes, and use the **Browse** button to upload the file again. Once everything in the Map and Table panes is correct, click the <span style="color: #dd4b39;"><b>Write to DB</b></span> button to save the data to the server.
 
-Yeesh I don't even know.
+### Metadata Entry
 
-## Model Options {#sight-options}
+The next step is to enter the metadata for you survey. Click **Metadata Entry** in the sidebar under **Sightability**, then select the species and survey type. Enter the date the survey took place, the type of aircraft used, and the number of observations (rows) recorded on the datasheet. Select the region and analysis unit, and if you uploaded a file in the previous step select it in the GPS Data File input. Enter the number of subunits sampled in each density strata, and finally enter any comments or notes about the survey. Once the form is complete click the red <span style="color: #dd4b39;"><b>Submit Response</b></span> button to continue. A dialog will appear confirming that the data were saved.
+
+If you made a mistake on the Metadata form you can correct it on the Past Surveys tab. This tab presents a spreadsheet with all of the survey metadata entered to date. You can delete rows by right-clicking or edit the information in any of the fields. If you make changes on the Past Surveys tab make sure to click the <span style="color: #dd4b39;"><b>Save Edits</b></span> button when you're finished.
+
+### Observation Entry
+
+Once the Metadata is entered correctly click **Observation Entry** on the sidebar, then click the <span style="color: #3c8dbc;"><b>Load</b></span> button to get started. Use the inputs in the dialog that appears to select the survey you entered in the previous step, then click <span style="color: #3c8dbc;"><b>Load Data</b></span>. A spreadsheet will appear with the Species, Survey Type, Date, and Area populated for you. Fill in the additional columns (beginning with Stratum) with the information from your datasheet. You may need to use the horizontal scroll bar below the spreadsheet to access all the columns if they don't fit on your screen. The number of rows available in the spreadsheet will match the number of observations you entered in the Metadata from, but If you need to add additional rows you can do so by right-clicking in the last row and selecting "insert row below." You can view a summary of the data you've entered below the spreadsheet.
+
+Once all the data from your datasheet has been added to the spreadsheet click **Validate** to check for errors. If any errors are present a dialog will appear explaining what they are and how to fix them. Once any errors are corrected use the <span style="color: #dd4b39;"><b>Save</b></span> button to save the data to the server.
+
+## Running a Sightability Model {#sight-model}
+
+### Model Options {#sight-options}
 
 Explain model and data options, subsetting, etc.
 
-## Running a model {#sight-model}
+### Loading Data {#sight-load}
 
-Click the button ya dingus.
+Explain potential errors here.
 
-## Model Output {#sight-output}
+### Model Output {#sight-output}
 
 Explain estimates and covariates in tables tab.
 
-## Admin Tab {#sight-admin}
+### Admin Tab {#sight-admin}
 
 Add to ipm_db.
 
 ## Step-By-Step Sightability Model Example {#sight-ex}
 
-Straight from Charlie's google doc.
+This example shows how to run a sightability model for mule deer in the Smokey-Boise DAU step by step, including screenshots of the website.
+
+1. Start by clicking Sightability then Setup in the sidebar
+
+2. On the setup page select the species and DAU you want to model. In this example we use mule deer and MD_Smokey-Boise. Make sure to select the correct species and DAU before clicking the button to load sightability data.
+
+3. Click the button labeled "Get Survey Data" to load the data for the species and DAU you selected.
+
+4. Once the data is loaded you should see a dialog indicating that the process was successful. Click Dismiss. If you receive an error see [loading data](#sight-load).
+
+5. Review the data

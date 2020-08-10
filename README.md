@@ -158,4 +158,4 @@ Project Link: [IDFG User Manual](https://github.com/ericnewkirk/IDFG_user_manual
 [issues-url]: https://github.com/ericnewkirk/IDFG_user_manual/issues
 [license-shield]: https://img.shields.io/github/license/ericnewkirk/IDFG_user_manual.svg?style=flat-square
 [license-url]: https://github.com/ericnewkirk/IDFG_user_manual/blob/develop/LICENSE
-[product-screenshot]: images/screenshot.png
+[product-screenshot]: idfg_manual_screenshot.png
