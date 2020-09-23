@@ -38,7 +38,7 @@ If you plan on adding your results to an [IPM dataset](#gl-ipm-db) you should us
 * Burnin Length: 35,000
 * MCMC Iterations: 25,000
 
-When you've loaded your data, selected the appropriate options, and defined your model structure, move on to the Run tab and click <span style="color: #3c8dbc;"><b>Fit Model</b></span> to run the model. If no errors are encountered dismiss the dialog and click **Tables** in the sidebar to view your results. If the model fails to run check the [errors](#surv-errors) section.
+When you've loaded your data, selected the appropriate options, and defined your model structure, move on to the Run tab, specify your [MCMC settings](#gl-mcmc), and click <span style="color: #3c8dbc;"><b>Fit Model</b></span> to run the model. If no errors are encountered dismiss the dialog and click **Tables** in the sidebar to view your results. If the model fails to run check the [errors](#surv-errors) section.
 
 ### Model Output {#surv-output}
 

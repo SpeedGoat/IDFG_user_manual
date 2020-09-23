@@ -19,6 +19,9 @@ Age classes must be defined for each species to capture variability in parameter
 ###### Bio Year {#gl-bio-year -}
 Since winter surveys typically span a time period including two years the term BioYear consolidates the survey period into a single year.  For example, surveys can start in December 2019 and run through January 2020 so the BioYear for this survey is 2020.  The term was created for easier record keeping and does not have a biological definition. The biological year begins on December 15 and was intended to correctly align data collection with biological processes. Estimates from the models operate on this biological year.
 
+###### DAU (Data Analysis Unit) {#gl-dau -}
+Recent location data from mule deer fitted with GPS radio-collars provided a more informed understanding of how mule deer populations are distributed across Idaho. In light of this new information, IDFG revised the geographical boundaries of the data analysis units (DAU) that are used for mule deer population monitoring and management and incorporated these changes into the IPM.  Some aerial surveys can no longer be viewed in the IPM because they don’t include abundance for all of the GMUs in the new DAU. Past aerial surveys were incorporated into the site through a series of conversations with area biologists. Questions about the data can be directed to Paul Atwood or Josh Nowak.
+
 ## Survival {#gl-surv}
 
 ###### Known Fate Survival Model {#gl-known-fate -}
@@ -91,6 +94,15 @@ IPM database files contain the estimates from survival and sightability models, 
 1. Atwood.RData – DO NOT USE, this database is for development and research purposes only
 2. mule_deer_independent.RData –  This database will use survival data from the DAU you are modeling over multiple years when there is not any survival data for the DAU and the year in the database.  Use this database if the DAU you are modeling has a large amount of data available and survival is relatively constant between years.
 3. mule_deer_shared.RData - Strongly recommended.  This database will use survival data from other DAU’s in the state for the current year when there is not any survival data for the DAU and year in the database.  Use this database if the DAU you are modeling has little to no data available or if survival is highly variable between years.
+
+###### Future Weather {#gl-ipm-weather -}
+
+Future weather covariates were developed using Mark Hurley’s dissertation and the analyses contained therein.
+
+* Average: Mean observed weather conditions
+* Good: Upper 95% quantile of observed weather
+* Bad:   Lower 5% quantile of observed weather
+* None: Do not use weather data covariates in the analysis
 
 ## MCMC {#gl-mcmc}
 

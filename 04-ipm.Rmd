@@ -1,3 +1,0 @@
-# IPM {#ipm}
-
-Information about running ipm models goes here.
