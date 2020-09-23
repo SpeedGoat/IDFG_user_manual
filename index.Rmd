@@ -25,7 +25,7 @@ You can contribute to this document via [GitHub][Git], where you can also make [
 
 This manual was created by [Speedgoat][spdgt] and [IDFG](https://idfg.idaho.gov/) using [bookdown](https://bookdown.org/).
 
-To get started, choose a section from the table of contents on the left or click [here](#popr-info) to start from the beginning.
+To get started with PopR, visit the [Speedgoat homepage](https://www.speedgoat.io/) and select Idaho from the login menu.
 
 <center>
 
