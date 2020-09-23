@@ -1,0 +1,95 @@
+# Survival {#surv}
+
+## Running a Survival Model {#surv-model}
+
+### Loading Data {#surv-load}
+
+To run a survival model select **Survival** in the sidebar then click **Setup**. Select a species and DAU on the Overview tab and click the <span style="color: #3c8dbc;"><b>Download Data</b></span> button to download data from the IDFG database. Once the download is complete a dialog will confirm that the data has been downloaded and alert you to any errors present in the data (see the [errors](#surv-errors) section). Data will only be read for the species and DAU selected, so if you switch either selection later you'll have to repeat the process.
+
+Once the data is downloaded you can review it in various formats in the pane to the right. Data is pulled from SADD, so if you find individuals that plot out in the wrong area or DAU, you’ll need to fix them there.
+
+* Captures: Shows a map of the capture locations of all the individuals used in the analysis. The table on the left shows any IDs that have bad or missing capture location information.
+* Mortalities: Shows a map of the mortality locations for the DAU. The table on the left shows any IDs that have bad or missing mortality location information.
+* Collared Animals: Shows a barplot of the number of collared individuals throughout the analysis years. You can hover over each bar with your mouse and at the top of the graph, it will show you the status of collared individuals by month. Categories include missing, other mortality, harvested, and alive.
+* Raw Data Summary: Shows a summary of the raw data available to be for the selected DAU.
+  
+All the data available for the selected DAU can be viewed using the Captures, Monitoring, Mortalities, Encounter Histories, and Raw Data tabs in the bottom table. The Captures and Mortalities tables show information for *all* individuals, even if capture/mortality information is unavailable. You can sort using the arrows next to the headings and filter by entering names/values into the boxes under the headings.
+
+You can also view the data loaded from SADD on the **Individuals** page, where you can view raw data, encounter histories, captures, and mortality records. You can also filter to a specific animal, which can be helpful in tracking down [errors](#surv-errors).
+
+### Model Options {#surv-options}
+
+After loading survival data for a particular species and DAU move on to the Subset tab to specify the parameters for your model. Select a sex (default is all) and [age class](#gl-age-classes) (default is adult) to model, then select the range of years to include in the analysis (default includes all data available).
+
+Move on to the Structure tab and use the inputs to define the model that will be run on your data. First select a [known fate](#gl-known-fate) (simple survival estimation) or [multi-state](#gl-multi-state) (estimate mortality rates by cause - currently unavailable) model. If you're running a multi-state model use the Censor Fate input to exclude a particular source of mortality from the analysis. For example, if harvest is selected the estimated survival will answer the question “What would survival be in the absence of harvest?” Finally define how survival is allowed to vary with sex, time, and space. You must select more than 5 years for analysis to model survival as varying through time, and modeling survival as spatially varying is only available for statewide models.
+
+If you plan on adding your results to an [IPM dataset](#gl-ipm-db) you should use the default settings:
+
+* Sex: All
+* Age: One at a time, A then J
+* Analysis Years: 2000-Current Year
+* Model Type: Known Fate
+* Covariates: None
+* Censor Fate(s): Harvest
+* Model sexes as: Different
+* Model time as: Monthly
+* Model space as: Varying
+* Thinning Rate: 1
+* Burnin Length: 35,000
+* MCMC Iterations: 25,000
+
+When you've loaded your data, selected the appropriate options, and defined your model structure, move on to the Run tab, specify your [MCMC settings](#gl-mcmc), and click <span style="color: #3c8dbc;"><b>Fit Model</b></span> to run the model. If no errors are encountered dismiss the dialog and click **Tables** in the sidebar to view your results. If the model fails to run check the [errors](#surv-errors) section.
+
+### Model Output {#surv-output}
+
+Results are viewed under the **Tables** subheading on the left under **Survival**.  Estimates can be viewed by year or by month. Mean estimates are accompanied by the standard deviation as well as the lower and upper confidence intervals. You can copy, print, or download the data using the buttons at the top right of the table. You can also sort and filter using the boxes below the column headings.
+
+### Adding Results to IPM {#surv-admin}
+
+Use the **Admin** page to add the results of your survival model to the input data for the IPM. Only add the results to an [IPM dataset](#gl-ipm-db) if you're sure you used the correct settings and data. If there is already survival data in the IPM data file you select for the same species, year, and unit, that data will be overwritten with the results of your current model.
+
+Select the [IPM dataset](#gl-ipm-db) to which you want to add your estimates, and verify that the estimates themselves look reasonable, then click <span style="color: #dd4b39;"><b>Update DB</b></span> to add the estimates to the database file. DO NOT add results to the IPM database if you didn't use the default settings outlined in the [Model Options]{#surv-options} section.
+
+### Errors {#surv-errors}
+
+## Step-By-Step Survival Model Example {#surv-ex}
+
+This example shows how to run a survival model for mule deer in the Smokey-Boise DAU step by step, including screenshots of the website.
+
+1. Start by clicking **Survival** in the sidebar.
+
+![](./www/surv_01.PNG)
+
+2. Select the **Setup** page in the sidebar, then select the species and DAU you want to model. In this example we use mule deer and MD_Smokey-Boise. Make sure to select the correct species and DAU before clicking the button to load sightability data.
+
+3. Click the button labeled "Download Data" to load the data for the species and DAU you selected.
+
+![](./www/surv_02.PNG)
+
+4. Once the data is loaded you should see a dialog indicating that the process was successful. Click Dismiss. If you receive an error see the [errors](#surv-errors) section.
+
+5. Review the data in the panes to the right and tables at the bottom (see [Loading Data](#surv-load) for details).
+
+![](./www/surv_04.PNG)
+
+![](./www/surv_05.PNG)
+
+6. Move on to the [**Subset**](#surv-options) tab in the **User Inputs** pane, and make the appropriate selections. In this example we ran a model for adults of both sexes using data from 2000 to 2020.
+
+![](./www/surv_06.PNG)
+
+7. Move on to the [**Structure**](#surv-options) tab and define the model you want to run. Here we use a [known fate](#gl-known-fate) model where survival does not vary with sex, space, or time.
+
+![](./www/surv_07.PNG)
+
+8. Now that you've selected the appropriate settings and reviewed the input data, switch to the **Run** tab and click <span style="color: #3c8dbc;"><b>Fit Model</b></span>.
+
+![](./www/surv_08.PNG)
+
+9. Once model fitting is complete select the **Tables** page in the sidebar to view the output.
+
+![](./www/surv_10.PNG)
+
+10. If you're confident in the results and the settings used to run the model, you can add the survival results to an [IPM dataset](#gl-ipm-db) using the **Admin** tab in the sidebar. Be sure to read the [instructions](#surv-admin) and understand the difference between the various IPM databases before using the admin tab.
+
+![](./www/surv_12.PNG)

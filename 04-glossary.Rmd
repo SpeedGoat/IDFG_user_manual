@@ -1,0 +1,122 @@
+# Glossary {#gl}
+
+## General {#gl-general}
+
+###### Age Classes {#gl-age-classes -}
+Age classes must be defined for each species to capture variability in parameters like survival and harvest rate, as well as to determine when animals begin to reproduce. Regardless of actual birth date animals transition to the next age class on December 15, the model anniversary used in the IPM. Assuming calves and fawns are born approximately mid-June each year, the age classes translate to roughly the following:
+
+* Mule Deer
+    * A (Adult) - 1.5 years and up
+    * J (Juvenile) - 6 months to 1.5years
+    * Y (Young of Year) - birth to 6 months
+
+* Elk
+    * A (Adult) - 2.5 years and up
+    * S (SubAdult) - 1.5 to 2.5 years
+    * J (Juvenile) - 6 months to 1.5 years
+    * Y (Young of Year) - birth to 6 months
+
+###### Bio Year {#gl-bio-year -}
+Since winter surveys typically span a time period including two years the term BioYear consolidates the survey period into a single year.  For example, surveys can start in December 2019 and run through January 2020 so the BioYear for this survey is 2020.  The term was created for easier record keeping and does not have a biological definition. The biological year begins on December 15 and was intended to correctly align data collection with biological processes. Estimates from the models operate on this biological year.
+
+###### DAU (Data Analysis Unit) {#gl-dau -}
+Recent location data from mule deer fitted with GPS radio-collars provided a more informed understanding of how mule deer populations are distributed across Idaho. In light of this new information, IDFG revised the geographical boundaries of the data analysis units (DAU) that are used for mule deer population monitoring and management and incorporated these changes into the IPM.  Some aerial surveys can no longer be viewed in the IPM because they don’t include abundance for all of the GMUs in the new DAU. Past aerial surveys were incorporated into the site through a series of conversations with area biologists. Questions about the data can be directed to Paul Atwood or Josh Nowak.
+
+## Survival {#gl-surv}
+
+###### Known Fate Survival Model {#gl-known-fate -}
+Survival models attempt to estimate the probability that an animal alive at this time will be alive at some future time. A known-fate model does this in part by assuming that the fate of every animal is known. This name was chosen early in the development process. As time has passed we have tweaked and developed the model to relax assumptions and better meet the needs of our collaborators. The full model description is beyond the scope of this Glossary, but know that the Known-Fate model selection means that the results of running a model will show the user estimates of survival and mortality. This is in contrast to the multi-state models where multiple sources of mortality can be estimated, such as death by harvest or death by predator. See also: [Multi-state Survival Model](#gl-multi-state)
+
+###### Multi-state Survival Model {#gl-multi-state -}
+The multi-state survival model allows users to estimate survival, harvest mortality rate and other mortality rate. The different estimates sum to 1 and so to be comparable to the known-fate models users should take 1 - other mortality as equivalent to survival in the known-fate context. See also: [Known Fate Survival Model](#gl-known-fate)
+
+## Sightability {#gl-sight}
+
+###### Aircraft/Model {#gl-aircraft -}
+There are separate elk sightability models depending on the aircraft used for the survey.  The aircraft types include a Hiller 12E, Bell 47G, and Super Cub.  Mule deer sightability models do not have separate models for different types of aircraft.
+
+###### Area {#gl-area -}
+A generic term used to catch the species specific differences in management area naming. Instead of elk zones and deer pmu/dau we simply use area to describe the spatial extent we are focused on for a particular analysis.
+
+###### Composition Survey {#gl-comp-survey -}
+This survey type is used to gather data related to age and sex ratios and typically samples a smaller portion of the population in an area of interest. See also: [Sightability Survey](#gl-sight-survey)
+
+###### Demographic {#gl-demographic -}
+The demographic field in the sightability output table denotes which age and sex classes are described by the estimated values. Classes are based on on sex and [age class](#gl-age-classes) and vary by species and survey type.
+
+###### Group size {#gl-group-size -}
+Refers to the number of individuals in a single observed group.  The size of the group impacts the probability of detection and influences how the model estimates the true number of individuals. Group sizes include 1, 2, 3, 4, 5, 6, 7-15, 16-30, and >30.
+
+###### Movement Categories {#gl-movement -}
+The 3 movement categories are bedded, standing, and moving. This is based on the most active individual when initially observed. The movement categories impact the probability of detection and influence how the model estimates the true number of individuals.
+
+###### Obs {#gl-obs -}
+The number of observations in a given strata.
+
+###### Pop {#gl-pop -}
+The population of sampling units in a given strata. In other words, the total number of subunits in a strata.
+
+###### PropSampled {#gl-prop-sampled -}
+This is the proportion of units sampled in a given strata. This can be calculated by obs/pop, divide the number of subunits sampled in the strata by the total number of subunits in the strata.
+
+###### Sightability Survey {#gl-sight-survey -}
+An intensive aerial survey methodology to estimate the entire population size in a given area. Data, in the form of raw counts, from this survey are analyzed using a sightability model to estimate true population size from direct counts. See also: [Composition Survey](#gl-comp-survey)
+
+###### Snow {#gl-snow -}
+The 3 snow cover categories are 0-20%, 21-79%, and >80%.  The snow cover categories impact the probability of detection and influences how the model estimates the true number of individuals.
+
+###### Stratum {#gl-stratum -}
+The landscape is divided into separate strata based on the probability of being occupied by the species being surveyed.  Typically subunits are classified as high, medium, or low strata based on their suitability as habitat for a particular species.
+
+###### Subunit {#gl-subunit -}
+Used to define the proportion of the unit that was sampled.For example, if a unit consists of 10 subunits and the survey samples 3 of the 10 subunits then 3/10 or .3 of the unit was sampled. This is used to extrapolate sightability estimates such that if this same survey produced a count of 100 then the estimate is 100/.3 or 333 animals in the unit.
+
+###### Unit {#gl-unit -}
+Synonymous with GMU.
+
+###### Variance {#gl-variance -}
+The variance components of the sightability output are of interest to the user because they provide clues as to how to improve their surveys.
+
+* ModelVar: Model variance
+* SampleVar: Sample variance
+* SightVar: Sightability model variance
+* TotalVar: Total variance is the sum of the model, sample,and sightability variances. The square root of the total variance is the standard deviation of the estimated value.
+
+###### Vegetation {#gl-veg -}
+There are 5 vegetation class categories including grass/open/agriculture, sagebrush, juniper/mtn. mahogany, mtn. brush/aspen, and conifer. Vegetation class represents the dominant vegetation within a 30m buffer around where an individual deer or group of deer is observed. The vegetation class categories impact the probability of detection and influences how the model estimates the true number of individuals. PopR has data columns for all habitat data collected on IDFG elk and mule deer sightability and composition survey forms. IDFG elk aerial survey data sheets contain only % screen and that is the only habitat variable used in the elk sightability model. IDFG mule deer aerial survey and composition data sheets contain data columns for % screen, screen type, and veg type and veg type is the only habitat variable currently used in the mule deer sightability model.
+
+## IPM {#gl-ipm}
+
+###### IPM Database {#gl-ipm-db -}
+
+IPM database files contain the estimates from survival and sightability models, and are used when running the IPM. As of September 2020 there are 3 IPM database files in use for IDFG:
+
+1. Atwood.RData – DO NOT USE, this database is for development and research purposes only
+2. mule_deer_independent.RData –  This database will use survival data from the DAU you are modeling over multiple years when there is not any survival data for the DAU and the year in the database.  Use this database if the DAU you are modeling has a large amount of data available and survival is relatively constant between years.
+3. mule_deer_shared.RData - Strongly recommended.  This database will use survival data from other DAU’s in the state for the current year when there is not any survival data for the DAU and year in the database.  Use this database if the DAU you are modeling has little to no data available or if survival is highly variable between years.
+
+###### Future Weather {#gl-ipm-weather -}
+
+Future weather covariates were developed using Mark Hurley’s dissertation and the analyses contained therein.
+
+* Average: Mean observed weather conditions
+* Good: Upper 95% quantile of observed weather
+* Bad:   Lower 5% quantile of observed weather
+* None: Do not use weather data covariates in the analysis
+
+## MCMC {#gl-mcmc}
+
+###### Automate Convergence {#gl-converge -}
+Users may choose to simply check the “Automate Convergence” box below the MCMC sliders menu in the PopR interface. This option will assure that an adequate Burn-in Length and number of MCMC Iterations have been used to produce a statistically sound estimate and error distribution.
+
+###### Burnin Length {#gl-burn-in -}
+“Burn-in” is a term for an initial process that gives the Markov Chain time to approach the solution to the problem by throwing away some less reasonable starting points at the beginning of a Markov Chain Monte Carlo run. In PopR, managers should simply use the default Burn-in Length setting when developing an estimate through the standard user interface.
+
+###### Iterations {#gl-iter -}
+PopR uses Markov Chain Monte Carlo (MCMC) methods to “fit” IPM population estimates to the available data. MCMC methods estimate parameters in complex models by systematically updating informed prior distributions with information gleaned from field data (e.g. observed harvest). Therefore, they allow us to describe each parameter in terms of a distribution and that distribution’s shape. Typically, 25,000-100,000 MCMC iterations will be required to fit an IPM. If the number of MCMC iterations is set too low the uncertainty about an estimate is likely to be misrepresented.
+
+###### Brooks-Gelman-Rubin Statistic (R̂) {#gl-rhat -}
+In PopR, we use the Brooks-Gelman-Rubin (BGR) statistic, often represented as R̂ or Rhat, as an assessment of convergence and the criteria used when the "Automate Convergence" option is used. The BGR statistic suggests convergence when estimates of R̂ are below 1.1 or more generally close to 1. This statistic is reported in the output tables for most models and highlighted in red when R̂ estimates are above 1.1. The default settings will produce results that are unlikely to change even if run longer, but users should increase the number of MCMC iterations if R̂ estimates are above 1.1 and computing time allows.
+
+###### Thinning Rate {#gl-thin -}
+Thinning tells the sampler to only retain every nth value from the chains. This technique is sometimes used to reduce autocorrelation in the chains, but comes at the cost of reduced efficiency of the sampler. A more reasonable use of thinning is when hardware limitations are being reached, which typically comes in the form of running out of memory. This will not be an issue in PopR and, therefore, the recommended setting for the Thinning slider is 1.

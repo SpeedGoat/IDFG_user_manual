@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>3.2 Running a Sightability Model | Idaho Fish and Game PopR Website User Manual</title>
+  <meta name="description" content="Documentation for IDFG PopR" />
+  <meta name="generator" content="bookdown 0.20 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="3.2 Running a Sightability Model | Idaho Fish and Game PopR Website User Manual" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="Documentation for IDFG PopR" />
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="3.2 Running a Sightability Model | Idaho Fish and Game PopR Website User Manual" />
+  
+  <meta name="twitter:description" content="Documentation for IDFG PopR" />
+  
+
+<meta name="author" content="Speedgoat" />
+
+
+<meta name="date" content="2020-09-23" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="sight-de.html"/>
+<link rel="next" href="sight-ex.html"/>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
+
+
+
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Introduction</a></li>
+<li class="chapter" data-level="2" data-path="surv.html"><a href="surv.html"><i class="fa fa-check"></i><b>2</b> Survival</a><ul>
+<li class="chapter" data-level="2.1" data-path="surv-model.html"><a href="surv-model.html"><i class="fa fa-check"></i><b>2.1</b> Running a Survival Model</a><ul>
+<li class="chapter" data-level="2.1.1" data-path="surv-model.html"><a href="surv-model.html#surv-load"><i class="fa fa-check"></i><b>2.1.1</b> Loading Data</a></li>
+<li class="chapter" data-level="2.1.2" data-path="surv-model.html"><a href="surv-model.html#surv-options"><i class="fa fa-check"></i><b>2.1.2</b> Model Options</a></li>
+<li class="chapter" data-level="2.1.3" data-path="surv-model.html"><a href="surv-model.html#surv-output"><i class="fa fa-check"></i><b>2.1.3</b> Model Output</a></li>
+<li class="chapter" data-level="2.1.4" data-path="surv-model.html"><a href="surv-model.html#surv-admin"><i class="fa fa-check"></i><b>2.1.4</b> Adding Results to IPM</a></li>
+<li class="chapter" data-level="2.1.5" data-path="surv-model.html"><a href="surv-model.html#surv-errors"><i class="fa fa-check"></i><b>2.1.5</b> Errors</a></li>
+</ul></li>
+<li class="chapter" data-level="2.2" data-path="surv-ex.html"><a href="surv-ex.html"><i class="fa fa-check"></i><b>2.2</b> Step-By-Step Survival Model Example</a></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="sight.html"><a href="sight.html"><i class="fa fa-check"></i><b>3</b> Sightability</a><ul>
+<li class="chapter" data-level="3.1" data-path="sight-de.html"><a href="sight-de.html"><i class="fa fa-check"></i><b>3.1</b> Sightability Data Entry</a><ul>
+<li class="chapter" data-level="3.1.1" data-path="sight-de.html"><a href="sight-de.html#gps-data-entry"><i class="fa fa-check"></i><b>3.1.1</b> GPS Data Entry</a></li>
+<li class="chapter" data-level="3.1.2" data-path="sight-de.html"><a href="sight-de.html#metadata-entry"><i class="fa fa-check"></i><b>3.1.2</b> Metadata Entry</a></li>
+<li class="chapter" data-level="3.1.3" data-path="sight-de.html"><a href="sight-de.html#observation-entry"><i class="fa fa-check"></i><b>3.1.3</b> Observation Entry</a></li>
+</ul></li>
+<li class="chapter" data-level="3.2" data-path="sight-model.html"><a href="sight-model.html"><i class="fa fa-check"></i><b>3.2</b> Running a Sightability Model</a><ul>
+<li class="chapter" data-level="3.2.1" data-path="sight-model.html"><a href="sight-model.html#sight-load"><i class="fa fa-check"></i><b>3.2.1</b> Loading Data</a></li>
+<li class="chapter" data-level="3.2.2" data-path="sight-model.html"><a href="sight-model.html#sight-options"><i class="fa fa-check"></i><b>3.2.2</b> Model Options</a></li>
+<li class="chapter" data-level="3.2.3" data-path="sight-model.html"><a href="sight-model.html#sight-output"><i class="fa fa-check"></i><b>3.2.3</b> Model Output</a></li>
+<li class="chapter" data-level="3.2.4" data-path="sight-model.html"><a href="sight-model.html#sight-admin"><i class="fa fa-check"></i><b>3.2.4</b> Adding Results to IPM</a></li>
+<li class="chapter" data-level="3.2.5" data-path="sight-model.html"><a href="sight-model.html#sight-errors"><i class="fa fa-check"></i><b>3.2.5</b> Errors</a></li>
+</ul></li>
+<li class="chapter" data-level="3.3" data-path="sight-ex.html"><a href="sight-ex.html"><i class="fa fa-check"></i><b>3.3</b> Step-By-Step Sightability Model Example</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="ipm.html"><a href="ipm.html"><i class="fa fa-check"></i><b>4</b> IPM</a><ul>
+<li class="chapter" data-level="4.1" data-path="ipm-model.html"><a href="ipm-model.html"><i class="fa fa-check"></i><b>4.1</b> Running the IPM</a><ul>
+<li class="chapter" data-level="4.1.1" data-path="ipm-model.html"><a href="ipm-model.html#ipm-load"><i class="fa fa-check"></i><b>4.1.1</b> Loading Data</a></li>
+<li class="chapter" data-level="4.1.2" data-path="ipm-model.html"><a href="ipm-model.html#ipm-options"><i class="fa fa-check"></i><b>4.1.2</b> Model Options</a></li>
+<li class="chapter" data-level="4.1.3" data-path="ipm-model.html"><a href="ipm-model.html#ipm-output"><i class="fa fa-check"></i><b>4.1.3</b> Model Output</a></li>
+<li class="chapter" data-level="4.1.4" data-path="ipm-model.html"><a href="ipm-model.html#ipm-errors"><i class="fa fa-check"></i><b>4.1.4</b> Errors</a></li>
+</ul></li>
+<li class="chapter" data-level="4.2" data-path="ipm-ex.html"><a href="ipm-ex.html"><i class="fa fa-check"></i><b>4.2</b> Step-By-Step IPM Example</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="gl.html"><a href="gl.html"><i class="fa fa-check"></i><b>5</b> Glossary</a><ul>
+<li class="chapter" data-level="5.1" data-path="gl-general.html"><a href="gl-general.html"><i class="fa fa-check"></i><b>5.1</b> General</a></li>
+<li class="chapter" data-level="5.2" data-path="gl-surv.html"><a href="gl-surv.html"><i class="fa fa-check"></i><b>5.2</b> Survival</a></li>
+<li class="chapter" data-level="5.3" data-path="gl-sight.html"><a href="gl-sight.html"><i class="fa fa-check"></i><b>5.3</b> Sightability</a></li>
+<li class="chapter" data-level="5.4" data-path="gl-ipm.html"><a href="gl-ipm.html"><i class="fa fa-check"></i><b>5.4</b> IPM</a></li>
+<li class="chapter" data-level="5.5" data-path="gl-mcmc.html"><a href="gl-mcmc.html"><i class="fa fa-check"></i><b>5.5</b> MCMC</a></li>
+</ul></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Idaho Fish and Game PopR Website User Manual</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="sight-model" class="section level2">
+<h2><span class="header-section-number">3.2</span> Running a Sightability Model</h2>
+<div id="sight-load" class="section level3">
+<h3><span class="header-section-number">3.2.1</span> Loading Data</h3>
+<p>To run a sightability model select <strong>Sightability</strong> in the sidebar then click <strong>Setup</strong>. Select a species and DAU on the Load Data tab and click the <span style="color: #3c8dbc;"><b>Get Survey Data</b></span> button to download data from the IDFG database. Once the download is complete a dialog will confirm that the data has been downloaded and alert you to any errors present in the data (see the <a href="sight-model.html#sight-errors">errors</a> section). Data will only be read for the species and DAU selected, so if you switch either selection later you’ll have to repeat the process.</p>
+<p>Once the data is downloaded you can review it in various formats in the pane to the right.</p>
+<ul>
+<li>Flight record: Summarizes the data downloaded by <a href="gl-sight.html#gl-comp-survey">survey type</a> and <a href="gl-general.html#gl-bio-year">bio year</a>.</li>
+<li>Sampling: Summarizes the data downloaded by <a href="#gl-sight-stratum">stratum</a>, showing the population of units available and how many of those were sampled. This is a great table to check against your expectations - how many high, medium and low subunits did you fly? Does the data match? This is also a good place to make sure the stratum and unit were entered correctly for all of your observations - missing values in those columns are a common cause of <a href="sight-model.html#sight-errors">errors</a>.</li>
+<li>All Data: Shows all of the observation data downloaded for this species and DAU.</li>
+<li>Data to Model: Shows the observation data as it will be passed to the model for transparency.</li>
+</ul>
+<p>If any errors appear in the data you can correct them through the <strong>Metadata Entry</strong> or <strong>Observation Entry</strong> pages in the sidebar. If you make any corrections be sure to load the data again when you return to the <strong>Setup</strong> page.</p>
+</div>
+<div id="sight-options" class="section level3">
+<h3><span class="header-section-number">3.2.2</span> Model Options</h3>
+<p>After loading sightability data for a particular species and DAU move on to the Options tab to specify the parameters for your model. Select a year from those available in the data, then choose whether to analyze by <a href="gl-sight.html#gl-area">area</a>, <a href="gl-sight.html#gl-unit">unit</a>, <a href="gl-sight.html#gl-stratum">stratum</a>, or <a href="gl-sight.html#gl-subunit">sub-unit</a>. It’s important to note that your results cannot be used to extrapolate to a wider geographic area if you select unit, stratum, or subunit in this dropdown. Finally select a <a href="gl-sight.html#gl-sight-survey">survey type</a> and <a href="gl-sight.html#gl-aircraft">aircraft</a> - the available selections for these may be limited based on the species selected.</p>
+<p>Move on to the Sampling tab and review the values displayed. These values are taken from the data entered for the survey you selected. Subunits represent subdivisions within a stratum, so the minimum number of subunits in any given stratum is 1. If there are subunits within a stratum that weren’t sampled you may need to adjust the numbers here to accurately represent the proportion sampled.</p>
+<p>When you’ve selected the appropriate options and adjusted the sampling parameters (if necessary) move on to the Run tab and click <span style="color: #3c8dbc;"><b>Fit Model</b></span> to run the model. If no errors are encountered dismiss the dialog and click <strong>Tables</strong> in the sidebar to view your results. If the model fails to run check the <a href="sight-model.html#sight-errors">errors</a> section.</p>
+</div>
+<div id="sight-output" class="section level3">
+<h3><span class="header-section-number">3.2.3</span> Model Output</h3>
+<p>Once you’ve run a model you can view the results on the <strong>Tables</strong> page. The top half of the page shows the data used in the model, summarized by category:</p>
+<ul>
+<li>Sample: Displays how many <a href="gl-sight.html#gl-subunit">subunits</a> were available in each <a href="gl-sight.html#gl-stratum">stratum</a>, and how many of those were sampled.</li>
+<li>Activity: Displays the number of observations for each <a href="gl-sight.html#gl-movement">activity</a> category.</li>
+<li>Vegetation: Displays the number of observations for each <a href="gl-sight.html#gl-veg">vegetation type</a>.</li>
+<li>Snow: Displays the number of observations binned by <a href="gl-sight.html#gl-snow">snow cover</a>.</li>
+<li>Group Size: Displays the number of observations binned by <a href="gl-sight.html#gl-group-size">group size</a>.</li>
+</ul>
+<p>The bottom half of the page shows the model output:</p>
+<ul>
+<li>Detection: Displays the probability of detection (as a range) assigned to the input observations.</li>
+<li>N: Displays the abundance estimates produced by the model by <a href="gl-sight.html#gl-demographic">demographic</a>, including the <a href="gl-sight.html#gl-variance">variance</a> for each estimate.</li>
+</ul>
+</div>
+<div id="sight-admin" class="section level3">
+<h3><span class="header-section-number">3.2.4</span> Adding Results to IPM</h3>
+<p>Use the <strong>Admin</strong> page to add the results of your sightability model to the input data for the IPM. Only add the results to an <a href="gl-ipm.html#gl-ipm-db">IPM dataset</a> if you’re sure you used the correct settings and data. If there is already sightability data in the IPM data file you select for the same year and unit, that data will be overwritten with the results of your current model. If you ran a model on <a href="gl-sight.html#gl-comp-survey">composition survey</a> data, sex and age ratios will be added; for <a href="gl-sight.html#gl-sight-survey">sightability surveys</a> abundance estimates will be added.</p>
+<p>Select the <a href="gl-ipm.html#gl-ipm-db">IPM dataset</a> to which you want to add your estimates, and verify that the estimates themselves look reasonable, then click <span style="color: #dd4b39;"><b>Update DB</b></span> to add the estimates to the database file.</p>
+</div>
+<div id="sight-errors" class="section level3">
+<h3><span class="header-section-number">3.2.5</span> Errors</h3>
+<div id="missing-values-in-the-stratum-or-unit-fields" class="section level6 unnumbered">
+<h6>Missing values in the stratum or unit fields</h6>
+<p>These errors should be apparent when reviewing the data in the <strong>Sampling</strong> tab of the <strong>Setup</strong> page. Missing values in these columns can cause data to be discarded or cause the model to fail. To fix them navigate to the <strong>Observation Entry</strong> page, load the data for the survey in question, and fill in the missing information. Don’t forget to click the button to save your changes when all the values have been entered.</p>
+</div>
+<div id="empty-rows-at-the-bottom-of-the-observation-table" class="section level6 unnumbered">
+<h6>Empty rows at the bottom of the observation table</h6>
+<p>Sometimes when the metadata and observations entered for a survey don’t agree there can be empty rows at the bottom of the observation data entry table. If that happens load the survey data in the <strong>Observation Entry</strong> page and right-click on the empty row(s) to delete. As above, don’t forget to save your changes.</p>
+</div>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="sight-de.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="sight-ex.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["_main.pdf"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    var src = "true";
+    if (src === "" || src === "true") src = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML";
+    if (location.protocol !== "file:")
+      if (/^https?:/.test(src))
+        src = src.replace(/^https?:/, '');
+    script.src = src;
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+--- 
+title: "Idaho Fish and Game PopR Website User Manual"
+author: "Speedgoat"
+date: "`r Sys.Date()`"
+site: bookdown::bookdown_site
+output:
+  bookdown::gitbook:
+    split_by: section
+  bookdown::pdf_book:
+    latex_engine: xelatex
+documentclass: book
+bibliography: [book.bib, packages.bib]
+biblio-style: apalike
+link-citations: yes
+description: "Documentation for IDFG PopR"
+---
+
+# Introduction
+
+This manual is intended to provide support and guidance for using the 
+[IDFG PopR Website][PopR] to run population models. Models covered here include 
+[Survival](#surv), [Sightability](#sight), and [IPM](#ipm).
+
+You can contribute to this document via [GitHub][Git], where you can also make [Suggestions][GitIssues] for adding or changing content.
+
+This manual was created by [Speedgoat][spdgt] and [IDFG](https://idfg.idaho.gov/) using [bookdown](https://bookdown.org/).
+
+To get started with PopR, visit the [Speedgoat homepage](https://www.speedgoat.io/) and select Idaho from the login menu.
+
+<center>
+
+[![Logo](./www/spdgt_logo.png)][spdgt]
+
+</center>
+
+[PopR]: https://popr.cfc.umt.edu/IDFG/
+[Git]: https://github.com/ericnewkirk/IDFG_user_manual
+[GitIssues]: https://github.com/ericnewkirk/IDFG_user_manual/issues
+[spdgt]: https://www.speedgoat.io
