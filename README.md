@@ -8,11 +8,9 @@
 
 <!-- PROJECT LOGO -->
 <br />
+
 <p align="center">
-  <a href="https://github.com/ericnewkirk/IDFG_user_manual">
-    <img src = "https://drive.google.com/uc?export=view&id=105fit7uHKpxzhbP3D8UzRR4nGrCexJLP",
-          srcset = "https://drive.google.com/uc?export=view&id=16tWkf25891vbZjQ-Js88cz307xYAZFGj", alt="Logo", width="400", height="200">
-  </a>
+  [![Speedgoat Logo][https://drive.google.com/uc?export=view&id=105fit7uHKpxzhbP3D8UzRR4nGrCexJLP]](https://www.speedgoat.io/)
 
   <h3 align="center">Idaho Fish and Game PopR User Manual</h3>
 
@@ -27,8 +25,6 @@
     <a href="https://github.com/ericnewkirk/IDFG_user_manual/issues">Request A Feature</a>
   </p>
 </p>
-
-
 
 <!-- TABLE OF CONTENTS -->
 ## Table of Contents
