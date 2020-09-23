@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>4 Sightability | Idaho Fish and Game PopR Website User Manual</title>
+  <title>4.2 Running a Sightability Model | Idaho Fish and Game PopR Website User Manual</title>
   <meta name="description" content="Documentation for IDFG PopR" />
   <meta name="generator" content="bookdown 0.20 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="4 Sightability | Idaho Fish and Game PopR Website User Manual" />
+  <meta property="og:title" content="4.2 Running a Sightability Model | Idaho Fish and Game PopR Website User Manual" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="4 Sightability | Idaho Fish and Game PopR Website User Manual" />
+  <meta name="twitter:title" content="4.2 Running a Sightability Model | Idaho Fish and Game PopR Website User Manual" />
   
   <meta name="twitter:description" content="Documentation for IDFG PopR" />
   
@@ -31,8 +31,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="surv-ex.html"/>
-<link rel="next" href="sight-de.html"/>
+<link rel="prev" href="sight-de.html"/>
+<link rel="next" href="sight-ex.html"/>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -118,35 +118,66 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="sight" class="section level1">
-<h1><span class="header-section-number">4</span> Sightability</h1>
-<p>Sightability models use aerial survey data combined with detection probability
-models to estimate total abundance within a sampling unit.</p>
-<p>The basic idea behind sightability is a fairly simple process. First the sightability of the group is estimated by taking the covariate values and previously estimated coefficients. For example, if the model had one covariate called veg and the value of veg for a given observation was .8 then we can estimate sightability with something like:</p>
-<p><span class="math inline">\(logit(sight) = 1.1 - 0.6 * veg\)</span></p>
-<p>Here the average sightability is something like logit(1.1) or 0.75 and the effect of veg is roughly -0.6, so if we plug in our observation of 0.8 we would get</p>
-<p><span class="math inline">\(logit(sight) = 1.1 - 0.6 * 0.8\)</span></p>
-<p>The value of sight is then 0.65. Now let’s say that the group had 10 animals that were observed from aircraft. The estimate for the group size is 10/0.65 or about 15 animals. That is the adjustment applied to each group.
-To conduct a sightability survey a manager would first define the desired scope of inference, say a DAU. Within the DAU there are GMUs and subunits. The area is then stratified based on previous observations and snow cover. For the sake of an example let’s say we have 100 subunits and we have decided that 60 are in the high stratum, 30 are in the medium and 10 are in low. Within each stratum we have to decide how many to sample. If we decide to sample all of the highs and half of the lows and a quarter of the lows then we will have 60 high, 15 medium and say 3 low subunits to fly.</p>
-<p>With data in hand we can estimate sightability as outlined above and then we will extrapolate those numbers to all of the areas that were not sampled. For simplicity, say our sightability adjusted estimates for each stratum were 250, 75 and 10 for high, medium and low respectively.</p>
-<p>The general idea behind extrapolating is straightforward. To know what area was we simply divide the number of subunits flown by the population of subunits within a stratum.</p>
-<p>High: 60/60 = 1</p>
-<p>Medium: 15/30 = 0.5</p>
-<p>Low: 3/10 = 0.333</p>
-<p>Now to use this number we will divide the adjusted number of animals by the proportion of subunits flown</p>
-<p>High: 250/1 = 250 animals</p>
-<p>Medium: 75/0.5 = 150 animals</p>
-<p>Low: 10/0.333 = 30 animals</p>
-<p>This example hopefully shows the importance of sampling and how critical it is to know what stratum an observation came from. Without the stratum we cannot know the proportion of the area sampled and cannot make an estimate relate back to the population of subunits.</p>
-<p>The extrapolation step also demonstrates that the density of animals is assumed to be constant. In the case of the mediums the area sampled produced 75 animals and it is assumed that the unflown subunits with the medium stratum are the same, which is how we get away with dividing by the proportion of area sampled. If a biologist only flies subunits where they know there are lots of deer then that number will be extrapolated to the remainder of the GMU and DAU.</p>
+<div id="sight-model" class="section level2">
+<h2><span class="header-section-number">4.2</span> Running a Sightability Model</h2>
+<div id="sight-load" class="section level3">
+<h3><span class="header-section-number">4.2.1</span> Loading Data</h3>
+<p>To run a sightability model select <strong>Sightability</strong> in the sidebar then click <strong>Setup</strong>. Select a species and DAU on the Load Data tab and click the <span style="color: #3c8dbc;"><b>Get Survey Data</b></span> button to download data from the IDFG database. Once the download is complete a dialog will confirm that the data has been downloaded and alert you to any errors present in the data (see the <a href="sight-model.html#sight-errors">errors</a> section). Data will only be read for the species and DAU selected, so if you switch either selection later you’ll have to repeat the process.</p>
+<p>Once the data is downloaded you can review it in various formats in the pane to the right.</p>
+<ul>
+<li>Flight record: Summarizes the data downloaded by <a href="gl-sight.html#gl-comp-survey">survey type</a> and <a href="gl-general.html#gl-bio-year">bio year</a>.</li>
+<li>Sampling: Summarizes the data downloaded by <a href="#gl-sight-stratum">stratum</a>, showing the population of units available and how many of those were sampled. This is a great table to check against your expectations - how many high, medium and low subunits did you fly? Does the data match? This is also a good place to make sure the stratum and unit were entered correctly for all of your observations - missing values in those columns are a common cause of <a href="sight-model.html#sight-errors">errors</a>.</li>
+<li>All Data: Shows all of the observation data downloaded for this species and DAU.</li>
+<li>Data to Model: Shows the observation data as it will be passed to the model for transparency.</li>
+</ul>
+<p>If any errors appear in the data you can correct them through the <strong>Metadata Entry</strong> or <strong>Observation Entry</strong> pages in the sidebar. If you make any corrections be sure to load the data again when you return to the <strong>Setup</strong> page.</p>
+</div>
+<div id="sight-options" class="section level3">
+<h3><span class="header-section-number">4.2.2</span> Model Options</h3>
+<p>After loading sightability data for a particular species and DAU move on to the Options tab to specify the parameters for your model. Select a year from those available in the data, then choose whether to analyze by <a href="gl-sight.html#gl-area">area</a>, <a href="gl-sight.html#gl-unit">unit</a>, <a href="gl-sight.html#gl-stratum">stratum</a>, or <a href="gl-sight.html#gl-subunit">sub-unit</a>. It’s important to note that your results cannot be used to extrapolate to a wider geographic area if you select unit, stratum, or subunit in this dropdown. Finally select a <a href="gl-sight.html#gl-sight-survey">survey type</a> and <a href="gl-sight.html#gl-aircraft">aircraft</a> - the available selections for these may be limited based on the species selected.</p>
+<p>Move on to the Sampling tab and review the values displayed. These values are taken from the data entered for the survey you selected. Subunits represent subdivisions within a stratum, so the minimum number of subunits in any given stratum is 1. If there are subunits within a stratum that weren’t sampled you may need to adjust the numbers here to accurately represent the proportion sampled.</p>
+<p>When you’ve selected the appropriate options and adjusted the sampling parameters (if necessary) move on to the Run tab and click <span style="color: #3c8dbc;"><b>Fit Model</b></span> to run the model. If no errors are encountered dismiss the dialog and click <strong>Tables</strong> in the sidebar to view your results. If the model fails to run check the <a href="sight-model.html#sight-errors">errors</a> section.</p>
+</div>
+<div id="sight-output" class="section level3">
+<h3><span class="header-section-number">4.2.3</span> Model Output</h3>
+<p>Once you’ve run a model you can view the results on the <strong>Tables</strong> page. The top half of the page shows the data used in the model, summarized by category:</p>
+<ul>
+<li>Sample: Displays how many <a href="gl-sight.html#gl-subunit">subunits</a> were available in each <a href="gl-sight.html#gl-stratum">stratum</a>, and how many of those were sampled.</li>
+<li>Activity: Displays the number of observations for each <a href="gl-sight.html#gl-movement">activity</a> category.</li>
+<li>Vegetation: Displays the number of observations for each <a href="gl-sight.html#gl-veg">vegetation type</a>.</li>
+<li>Snow: Displays the number of observations binned by <a href="gl-sight.html#gl-snow">snow cover</a>.</li>
+<li>Group Size: Displays the number of observations binned by <a href="gl-sight.html#gl-group-size">group size</a>.</li>
+</ul>
+<p>The bottom half of the page shows the model output:</p>
+<ul>
+<li>Detection: Displays the probability of detection (as a range) assigned to the input observations.</li>
+<li>N: Displays the abundance estimates produced by the model by <a href="gl-sight.html#gl-demographic">demographic</a>, including the <a href="gl-sight.html#gl-variance">variance</a> for each estimate.</li>
+</ul>
+</div>
+<div id="sight-admin" class="section level3">
+<h3><span class="header-section-number">4.2.4</span> Adding Results to IPM</h3>
+<p>Use the <strong>Admin</strong> page to add the results of your sightability model to the input data for the IPM. Only add the results to an <a href="gl-ipm.html#gl-ipm-db">IPM dataset</a> if you’re sure you used the correct settings and data. If there is already sightability data in the IPM data file you select for the same year and unit, that data will be overwritten with the results of your current model. If you ran a model on <a href="gl-sight.html#gl-comp-survey">composition survey</a> data, sex and age ratios will be added; for <a href="gl-sight.html#gl-sight-survey">sightability surveys</a> abundance estimates will be added.</p>
+<p>Select the <a href="gl-ipm.html#gl-ipm-db">IPM dataset</a> to which you want to add your estimates, and verify that the estimates themselves look reasonable, then click <span style="color: #dd4b39;"><b>Update DB</b></span> to add the estimates to the database file.</p>
+</div>
+<div id="sight-errors" class="section level3">
+<h3><span class="header-section-number">4.2.5</span> Errors</h3>
+<div id="missing-values-in-the-stratum-or-unit-fields" class="section level6 unnumbered">
+<h6>Missing values in the stratum or unit fields</h6>
+<p>These errors should be apparent when reviewing the data in the <strong>Sampling</strong> tab of the <strong>Setup</strong> page. Missing values in these columns can cause data to be discarded or cause the model to fail. To fix them navigate to the <strong>Observation Entry</strong> page, load the data for the survey in question, and fill in the missing information. Don’t forget to click the button to save your changes when all the values have been entered.</p>
+</div>
+<div id="empty-rows-at-the-bottom-of-the-observation-table" class="section level6 unnumbered">
+<h6>Empty rows at the bottom of the observation table</h6>
+<p>Sometimes when the metadata and observations entered for a survey don’t agree there can be empty rows at the bottom of the observation data entry table. If that happens load the survey data in the <strong>Observation Entry</strong> page and right-click on the empty row(s) to delete. As above, don’t forget to save your changes.</p>
+</div>
+</div>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-<a href="surv-ex.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="sight-de.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="sight-de.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="sight-ex.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

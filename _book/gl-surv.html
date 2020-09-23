@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>4 Sightability | Idaho Fish and Game PopR Website User Manual</title>
+  <title>6.2 Survival | Idaho Fish and Game PopR Website User Manual</title>
   <meta name="description" content="Documentation for IDFG PopR" />
   <meta name="generator" content="bookdown 0.20 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="4 Sightability | Idaho Fish and Game PopR Website User Manual" />
+  <meta property="og:title" content="6.2 Survival | Idaho Fish and Game PopR Website User Manual" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="4 Sightability | Idaho Fish and Game PopR Website User Manual" />
+  <meta name="twitter:title" content="6.2 Survival | Idaho Fish and Game PopR Website User Manual" />
   
   <meta name="twitter:description" content="Documentation for IDFG PopR" />
   
@@ -31,8 +31,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="surv-ex.html"/>
-<link rel="next" href="sight-de.html"/>
+<link rel="prev" href="gl-general.html"/>
+<link rel="next" href="gl-sight.html"/>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -118,35 +118,24 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="sight" class="section level1">
-<h1><span class="header-section-number">4</span> Sightability</h1>
-<p>Sightability models use aerial survey data combined with detection probability
-models to estimate total abundance within a sampling unit.</p>
-<p>The basic idea behind sightability is a fairly simple process. First the sightability of the group is estimated by taking the covariate values and previously estimated coefficients. For example, if the model had one covariate called veg and the value of veg for a given observation was .8 then we can estimate sightability with something like:</p>
-<p><span class="math inline">\(logit(sight) = 1.1 - 0.6 * veg\)</span></p>
-<p>Here the average sightability is something like logit(1.1) or 0.75 and the effect of veg is roughly -0.6, so if we plug in our observation of 0.8 we would get</p>
-<p><span class="math inline">\(logit(sight) = 1.1 - 0.6 * 0.8\)</span></p>
-<p>The value of sight is then 0.65. Now let’s say that the group had 10 animals that were observed from aircraft. The estimate for the group size is 10/0.65 or about 15 animals. That is the adjustment applied to each group.
-To conduct a sightability survey a manager would first define the desired scope of inference, say a DAU. Within the DAU there are GMUs and subunits. The area is then stratified based on previous observations and snow cover. For the sake of an example let’s say we have 100 subunits and we have decided that 60 are in the high stratum, 30 are in the medium and 10 are in low. Within each stratum we have to decide how many to sample. If we decide to sample all of the highs and half of the lows and a quarter of the lows then we will have 60 high, 15 medium and say 3 low subunits to fly.</p>
-<p>With data in hand we can estimate sightability as outlined above and then we will extrapolate those numbers to all of the areas that were not sampled. For simplicity, say our sightability adjusted estimates for each stratum were 250, 75 and 10 for high, medium and low respectively.</p>
-<p>The general idea behind extrapolating is straightforward. To know what area was we simply divide the number of subunits flown by the population of subunits within a stratum.</p>
-<p>High: 60/60 = 1</p>
-<p>Medium: 15/30 = 0.5</p>
-<p>Low: 3/10 = 0.333</p>
-<p>Now to use this number we will divide the adjusted number of animals by the proportion of subunits flown</p>
-<p>High: 250/1 = 250 animals</p>
-<p>Medium: 75/0.5 = 150 animals</p>
-<p>Low: 10/0.333 = 30 animals</p>
-<p>This example hopefully shows the importance of sampling and how critical it is to know what stratum an observation came from. Without the stratum we cannot know the proportion of the area sampled and cannot make an estimate relate back to the population of subunits.</p>
-<p>The extrapolation step also demonstrates that the density of animals is assumed to be constant. In the case of the mediums the area sampled produced 75 animals and it is assumed that the unflown subunits with the medium stratum are the same, which is how we get away with dividing by the proportion of area sampled. If a biologist only flies subunits where they know there are lots of deer then that number will be extrapolated to the remainder of the GMU and DAU.</p>
+<div id="gl-surv" class="section level2">
+<h2><span class="header-section-number">6.2</span> Survival</h2>
+<div id="gl-known-fate" class="section level6 unnumbered">
+<h6>Known Fate Survival Model</h6>
+<p>Survival models attempt to estimate the probability that an animal alive at this time will be alive at some future time. A known-fate model does this in part by assuming that the fate of every animal is known. This name was chosen early in the development process. As time has passed we have tweaked and developed the model to relax assumptions and better meet the needs of our collaborators. The full model description is beyond the scope of this Glossary, but know that the Known-Fate model selection means that the results of running a model will show the user estimates of survival and mortality. This is in contrast to the multi-state models where multiple sources of mortality can be estimated, such as death by harvest or death by predator. See also: <a href="gl-surv.html#gl-multi-state">Multi-state Survival Model</a></p>
+</div>
+<div id="gl-multi-state" class="section level6 unnumbered">
+<h6>Multi-state Survival Model</h6>
+<p>The multi-state survival model allows users to estimate survival, harvest mortality rate and other mortality rate. The different estimates sum to 1 and so to be comparable to the known-fate models users should take 1 - other mortality as equivalent to survival in the known-fate context. See also: <a href="gl-surv.html#gl-known-fate">Known Fate Survival Model</a></p>
+</div>
 </div>
             </section>
 
           </div>
         </div>
       </div>
-<a href="surv-ex.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="sight-de.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="gl-general.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="gl-sight.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
