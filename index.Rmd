@@ -3,7 +3,11 @@ title: "Idaho Fish and Game PopR Website User Manual"
 author: "Speedgoat"
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
-output: bookdown::gitbook
+output:
+  bookdown::gitbook:
+    split_by: section
+  bookdown::pdf_book:
+    latex_engine: xelatex
 documentclass: book
 bibliography: [book.bib, packages.bib]
 biblio-style: apalike
@@ -19,13 +23,13 @@ This manual is intended to provide support and guidance for using the
 
 You can contribute to this document via [GitHub][Git], where you can also make [Suggestions][GitIssues] for adding or changing content.
 
-This manual was created by [Speedgoat][spdgt] using [bookdown](https://bookdown.org/).
+This manual was created by [Speedgoat][spdgt] and [IDFG](https://idfg.idaho.gov/) using [bookdown](https://bookdown.org/).
 
-To get started, choose a section from the table of contents on the left or click [here](#info) to start from the beginning.
+To get started, choose a section from the table of contents on the left or click [here](#popr-info) to start from the beginning.
 
 <center>
 
-[![Logo](https://drive.google.com/uc?export=view&id=105fit7uHKpxzhbP3D8UzRR4nGrCexJLP)][spdgt]
+[![Logo](./www/spdgt_logo.png)][spdgt]
 
 </center>
 
