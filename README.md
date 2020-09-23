@@ -10,7 +10,9 @@
 <br />
 
 <p align="center">
-  [![Speedgoat Logo][https://drive.google.com/uc?export=view&id=105fit7uHKpxzhbP3D8UzRR4nGrCexJLP]](https://www.speedgoat.io/)
+  <a href="https://www.speedgoat.io/">
+    <img src="www/spdgt_logo.png">
+  </a>
 
   <h3 align="center">Idaho Fish and Game PopR User Manual</h3>
 
