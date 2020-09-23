@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>4 IPM | Idaho Fish and Game PopR Website User Manual</title>
+  <title>4.2 Step-By-Step IPM Example | Idaho Fish and Game PopR Website User Manual</title>
   <meta name="description" content="Documentation for IDFG PopR" />
   <meta name="generator" content="bookdown 0.20 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="4 IPM | Idaho Fish and Game PopR Website User Manual" />
+  <meta property="og:title" content="4.2 Step-By-Step IPM Example | Idaho Fish and Game PopR Website User Manual" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="4 IPM | Idaho Fish and Game PopR Website User Manual" />
+  <meta name="twitter:title" content="4.2 Step-By-Step IPM Example | Idaho Fish and Game PopR Website User Manual" />
   
   <meta name="twitter:description" content="Documentation for IDFG PopR" />
   
@@ -31,8 +31,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="sight-ex.html"/>
-<link rel="next" href="ipm-model.html"/>
+<link rel="prev" href="ipm-model.html"/>
+<link rel="next" href="gl.html"/>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -125,18 +125,79 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="ipm" class="section level1">
-<h1><span class="header-section-number">4</span> IPM</h1>
-<p>PopR allows you to combine data from various sources to model wildlife populations using an integrated population model (IPM), leading to more robust and defensible estimates. First the data from each source are modeled independently to estimate individual population parameters, such as sex ratio and survival. Then these results are combined in the IPM to find the best fit for all of the available data.</p>
-<p><img src="www/intro_01.PNG" /></p>
+<div id="ipm-ex" class="section level2">
+<h2><span class="header-section-number">4.2</span> Step-By-Step IPM Example</h2>
+<p>This example shows how to run the IPM for mule deer in the Bannock DAU step by step, including screenshots of the website.</p>
+<ol style="list-style-type: decimal">
+<li>Start by clicking <strong>IPM</strong> in the sidebar.</li>
+</ol>
+<p><img src="www/ipm_01.PNG" /></p>
+<ol start="2" style="list-style-type: decimal">
+<li><p>Select the <strong>Setup</strong> page in the sidebar, then select the species and DAU you want to model. Select the <a href="gl-ipm.html#gl-ipm-db">IPM database</a> containing the estimates you want to use, and choose an option for incorporating [weather covariates](#gl-ipm-weather}.In this example we use mule deer and Bannock. Make sure to select the correct species and DAU before clicking the button to load harvest data.</p></li>
+<li><p>Click the button labeled “Fetch Harvest Data” to load the data for the species and DAU you selected.</p></li>
+</ol>
+<p><img src="www/ipm_02.PNG" /></p>
+<ol start="4" style="list-style-type: decimal">
+<li><p>Once the data is loaded you should see a dialog indicating that the process was successful. Click Dismiss. If you receive an error see the <a href="ipm-model.html#ipm-errors">errors</a> section.</p></li>
+<li><p>Review the data in the panes to the right and tables at the bottom (see <a href="ipm-model.html#ipm-load">Loading Data</a> for details).</p></li>
+</ol>
+<p><img src="www/ipm_03.PNG" /></p>
+<ol start="6" style="list-style-type: decimal">
+<li>In this example, the abundance data that will be used by the IPM was collected in the Bannock DAU in 2008 and 2015 shown in the graph in the upper right (red rectangle) and in the table at the bottom of the page (yellow rectangle).</li>
+</ol>
+<p><img src="www/ipm_04.PNG" /></p>
+<ol start="7" style="list-style-type: decimal">
+<li>Move on to the <a href="ipm-model.html#ipm-options"><strong>Structure</strong></a> tab and click the button to apply the default settings. Your settings should match those in the screenshot below.</li>
+</ol>
+<p><img src="www/ipm_06.PNG" /></p>
+<ol start="8" style="list-style-type: decimal">
+<li>Continue to the <a href="ipm-model.html#ipm-options"><strong>Harvest</strong></a> tab to review the settings there. The defaults were used for this example, so there’s no need to change anything.</li>
+</ol>
+<p><img src="www/ipm_07.PNG" /></p>
+<ol start="9" style="list-style-type: decimal">
+<li>Now that you’ve selected the appropriate settings and reviewed the input data, switch to the <strong>Run</strong> tab. Change the burn in slider to 10,500, change the number of iterations to 41,000, and click <span style="color: #3c8dbc;"><b>Fit Model</b></span>.</li>
+</ol>
+<p><img src="www/ipm_08.PNG" /></p>
+<ol start="10" style="list-style-type: decimal">
+<li>Once model fitting is complete select the <strong>Plots</strong> page in the sidebar to view the output.</li>
+</ol>
+<p><img src="www/ipm_09.PNG" /></p>
+<ol start="11" style="list-style-type: decimal">
+<li>Check the <strong>Tables</strong> page as well to see how the model performed. Note the Rhat values (&gt; 1.1) that appear in red, indicating the model may not have converged.</li>
+</ol>
+<p><img src="www/ipm_11.PNG" /></p>
+<ol start="12" style="list-style-type: decimal">
+<li>Now build a report to see more diagnostic information. Click <strong>Build Report</strong> in the sidebar, then click the download button.</li>
+</ol>
+<p><img src="www/ipm_12.PNG" /></p>
+<p><img src="www/ipm_13.PNG" /></p>
+<ol start="13" style="list-style-type: decimal">
+<li>Notice the diagnostic section in red, indicating that the model did not converge. In some cases this may indicate problems with the data or the model structure, but sometimes we just need to let the model run longer.</li>
+</ol>
+<p><img src="www/ipm_14.PNG" /></p>
+<ol start="14" style="list-style-type: decimal">
+<li>Return to the Run tab on the <strong>setup</strong> page and click the checkbox to <a href="gl-mcmc.html#gl-converge">automate convergence</a>, then run the model again.</li>
+</ol>
+<p><img src="www/ipm_15.PNG" /></p>
+<ol start="15" style="list-style-type: decimal">
+<li>Build a new report and check the diagnostics section again. Allowing the model to run as long as needed resulted in much better performance.</li>
+</ol>
+<p><img src="www/ipm_16.PNG" /></p>
+<ol start="16" style="list-style-type: decimal">
+<li>Check out the tables and plots in the rest of the report to review your results.</li>
+</ol>
+<p><img src="www/ipm_18.PNG" /></p>
+<p><img src="www/ipm_20.PNG" /></p>
+
 </div>
+<!-- </div> -->
             </section>
 
           </div>
         </div>
       </div>
-<a href="sight-ex.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="ipm-model.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="ipm-model.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="gl.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>

@@ -4,11 +4,11 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>3.1 Running a Survival Model | Idaho Fish and Game PopR Website User Manual</title>
+  <title>2.1 Running a Survival Model | Idaho Fish and Game PopR Website User Manual</title>
   <meta name="description" content="Documentation for IDFG PopR" />
   <meta name="generator" content="bookdown 0.20 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="3.1 Running a Survival Model | Idaho Fish and Game PopR Website User Manual" />
+  <meta property="og:title" content="2.1 Running a Survival Model | Idaho Fish and Game PopR Website User Manual" />
   <meta property="og:type" content="book" />
   
   
@@ -16,7 +16,7 @@
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="3.1 Running a Survival Model | Idaho Fish and Game PopR Website User Manual" />
+  <meta name="twitter:title" content="2.1 Running a Survival Model | Idaho Fish and Game PopR Website User Manual" />
   
   <meta name="twitter:description" content="Documentation for IDFG PopR" />
   
@@ -24,7 +24,7 @@
 <meta name="author" content="Speedgoat" />
 
 
-<meta name="date" content="2020-09-22" />
+<meta name="date" content="2020-09-23" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -67,39 +67,46 @@
 
 <ul class="summary">
 <li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Introduction</a></li>
-<li class="chapter" data-level="2" data-path="popr-info.html"><a href="popr-info.html"><i class="fa fa-check"></i><b>2</b> General Information</a></li>
-<li class="chapter" data-level="3" data-path="surv.html"><a href="surv.html"><i class="fa fa-check"></i><b>3</b> Survival</a><ul>
-<li class="chapter" data-level="3.1" data-path="surv-model.html"><a href="surv-model.html"><i class="fa fa-check"></i><b>3.1</b> Running a Survival Model</a><ul>
-<li class="chapter" data-level="3.1.1" data-path="surv-model.html"><a href="surv-model.html#surv-load"><i class="fa fa-check"></i><b>3.1.1</b> Loading Data</a></li>
-<li class="chapter" data-level="3.1.2" data-path="surv-model.html"><a href="surv-model.html#surv-options"><i class="fa fa-check"></i><b>3.1.2</b> Model Options</a></li>
-<li class="chapter" data-level="3.1.3" data-path="surv-model.html"><a href="surv-model.html#surv-output"><i class="fa fa-check"></i><b>3.1.3</b> Model Output</a></li>
-<li class="chapter" data-level="3.1.4" data-path="surv-model.html"><a href="surv-model.html#surv-admin"><i class="fa fa-check"></i><b>3.1.4</b> Adding Results to IPM</a></li>
-<li class="chapter" data-level="3.1.5" data-path="surv-model.html"><a href="surv-model.html#surv-errors"><i class="fa fa-check"></i><b>3.1.5</b> Errors</a></li>
+<li class="chapter" data-level="2" data-path="surv.html"><a href="surv.html"><i class="fa fa-check"></i><b>2</b> Survival</a><ul>
+<li class="chapter" data-level="2.1" data-path="surv-model.html"><a href="surv-model.html"><i class="fa fa-check"></i><b>2.1</b> Running a Survival Model</a><ul>
+<li class="chapter" data-level="2.1.1" data-path="surv-model.html"><a href="surv-model.html#surv-load"><i class="fa fa-check"></i><b>2.1.1</b> Loading Data</a></li>
+<li class="chapter" data-level="2.1.2" data-path="surv-model.html"><a href="surv-model.html#surv-options"><i class="fa fa-check"></i><b>2.1.2</b> Model Options</a></li>
+<li class="chapter" data-level="2.1.3" data-path="surv-model.html"><a href="surv-model.html#surv-output"><i class="fa fa-check"></i><b>2.1.3</b> Model Output</a></li>
+<li class="chapter" data-level="2.1.4" data-path="surv-model.html"><a href="surv-model.html#surv-admin"><i class="fa fa-check"></i><b>2.1.4</b> Adding Results to IPM</a></li>
+<li class="chapter" data-level="2.1.5" data-path="surv-model.html"><a href="surv-model.html#surv-errors"><i class="fa fa-check"></i><b>2.1.5</b> Errors</a></li>
 </ul></li>
-<li class="chapter" data-level="3.2" data-path="surv-ex.html"><a href="surv-ex.html"><i class="fa fa-check"></i><b>3.2</b> Step-By-Step Survival Model Example</a></li>
+<li class="chapter" data-level="2.2" data-path="surv-ex.html"><a href="surv-ex.html"><i class="fa fa-check"></i><b>2.2</b> Step-By-Step Survival Model Example</a></li>
 </ul></li>
-<li class="chapter" data-level="4" data-path="sight.html"><a href="sight.html"><i class="fa fa-check"></i><b>4</b> Sightability</a><ul>
-<li class="chapter" data-level="4.1" data-path="sight-de.html"><a href="sight-de.html"><i class="fa fa-check"></i><b>4.1</b> Sightability Data Entry</a><ul>
-<li class="chapter" data-level="4.1.1" data-path="sight-de.html"><a href="sight-de.html#gps-data-entry"><i class="fa fa-check"></i><b>4.1.1</b> GPS Data Entry</a></li>
-<li class="chapter" data-level="4.1.2" data-path="sight-de.html"><a href="sight-de.html#metadata-entry"><i class="fa fa-check"></i><b>4.1.2</b> Metadata Entry</a></li>
-<li class="chapter" data-level="4.1.3" data-path="sight-de.html"><a href="sight-de.html#observation-entry"><i class="fa fa-check"></i><b>4.1.3</b> Observation Entry</a></li>
+<li class="chapter" data-level="3" data-path="sight.html"><a href="sight.html"><i class="fa fa-check"></i><b>3</b> Sightability</a><ul>
+<li class="chapter" data-level="3.1" data-path="sight-de.html"><a href="sight-de.html"><i class="fa fa-check"></i><b>3.1</b> Sightability Data Entry</a><ul>
+<li class="chapter" data-level="3.1.1" data-path="sight-de.html"><a href="sight-de.html#gps-data-entry"><i class="fa fa-check"></i><b>3.1.1</b> GPS Data Entry</a></li>
+<li class="chapter" data-level="3.1.2" data-path="sight-de.html"><a href="sight-de.html#metadata-entry"><i class="fa fa-check"></i><b>3.1.2</b> Metadata Entry</a></li>
+<li class="chapter" data-level="3.1.3" data-path="sight-de.html"><a href="sight-de.html#observation-entry"><i class="fa fa-check"></i><b>3.1.3</b> Observation Entry</a></li>
 </ul></li>
-<li class="chapter" data-level="4.2" data-path="sight-model.html"><a href="sight-model.html"><i class="fa fa-check"></i><b>4.2</b> Running a Sightability Model</a><ul>
-<li class="chapter" data-level="4.2.1" data-path="sight-model.html"><a href="sight-model.html#sight-load"><i class="fa fa-check"></i><b>4.2.1</b> Loading Data</a></li>
-<li class="chapter" data-level="4.2.2" data-path="sight-model.html"><a href="sight-model.html#sight-options"><i class="fa fa-check"></i><b>4.2.2</b> Model Options</a></li>
-<li class="chapter" data-level="4.2.3" data-path="sight-model.html"><a href="sight-model.html#sight-output"><i class="fa fa-check"></i><b>4.2.3</b> Model Output</a></li>
-<li class="chapter" data-level="4.2.4" data-path="sight-model.html"><a href="sight-model.html#sight-admin"><i class="fa fa-check"></i><b>4.2.4</b> Adding Results to IPM</a></li>
-<li class="chapter" data-level="4.2.5" data-path="sight-model.html"><a href="sight-model.html#sight-errors"><i class="fa fa-check"></i><b>4.2.5</b> Errors</a></li>
+<li class="chapter" data-level="3.2" data-path="sight-model.html"><a href="sight-model.html"><i class="fa fa-check"></i><b>3.2</b> Running a Sightability Model</a><ul>
+<li class="chapter" data-level="3.2.1" data-path="sight-model.html"><a href="sight-model.html#sight-load"><i class="fa fa-check"></i><b>3.2.1</b> Loading Data</a></li>
+<li class="chapter" data-level="3.2.2" data-path="sight-model.html"><a href="sight-model.html#sight-options"><i class="fa fa-check"></i><b>3.2.2</b> Model Options</a></li>
+<li class="chapter" data-level="3.2.3" data-path="sight-model.html"><a href="sight-model.html#sight-output"><i class="fa fa-check"></i><b>3.2.3</b> Model Output</a></li>
+<li class="chapter" data-level="3.2.4" data-path="sight-model.html"><a href="sight-model.html#sight-admin"><i class="fa fa-check"></i><b>3.2.4</b> Adding Results to IPM</a></li>
+<li class="chapter" data-level="3.2.5" data-path="sight-model.html"><a href="sight-model.html#sight-errors"><i class="fa fa-check"></i><b>3.2.5</b> Errors</a></li>
 </ul></li>
-<li class="chapter" data-level="4.3" data-path="sight-ex.html"><a href="sight-ex.html"><i class="fa fa-check"></i><b>4.3</b> Step-By-Step Sightability Model Example</a></li>
+<li class="chapter" data-level="3.3" data-path="sight-ex.html"><a href="sight-ex.html"><i class="fa fa-check"></i><b>3.3</b> Step-By-Step Sightability Model Example</a></li>
 </ul></li>
-<li class="chapter" data-level="5" data-path="ipm.html"><a href="ipm.html"><i class="fa fa-check"></i><b>5</b> IPM</a></li>
-<li class="chapter" data-level="6" data-path="gl.html"><a href="gl.html"><i class="fa fa-check"></i><b>6</b> Glossary</a><ul>
-<li class="chapter" data-level="6.1" data-path="gl-general.html"><a href="gl-general.html"><i class="fa fa-check"></i><b>6.1</b> General</a></li>
-<li class="chapter" data-level="6.2" data-path="gl-surv.html"><a href="gl-surv.html"><i class="fa fa-check"></i><b>6.2</b> Survival</a></li>
-<li class="chapter" data-level="6.3" data-path="gl-sight.html"><a href="gl-sight.html"><i class="fa fa-check"></i><b>6.3</b> Sightability</a></li>
-<li class="chapter" data-level="6.4" data-path="gl-ipm.html"><a href="gl-ipm.html"><i class="fa fa-check"></i><b>6.4</b> IPM</a></li>
-<li class="chapter" data-level="6.5" data-path="gl-mcmc.html"><a href="gl-mcmc.html"><i class="fa fa-check"></i><b>6.5</b> MCMC</a></li>
+<li class="chapter" data-level="4" data-path="ipm.html"><a href="ipm.html"><i class="fa fa-check"></i><b>4</b> IPM</a><ul>
+<li class="chapter" data-level="4.1" data-path="ipm-model.html"><a href="ipm-model.html"><i class="fa fa-check"></i><b>4.1</b> Running the IPM</a><ul>
+<li class="chapter" data-level="4.1.1" data-path="ipm-model.html"><a href="ipm-model.html#ipm-load"><i class="fa fa-check"></i><b>4.1.1</b> Loading Data</a></li>
+<li class="chapter" data-level="4.1.2" data-path="ipm-model.html"><a href="ipm-model.html#ipm-options"><i class="fa fa-check"></i><b>4.1.2</b> Model Options</a></li>
+<li class="chapter" data-level="4.1.3" data-path="ipm-model.html"><a href="ipm-model.html#ipm-output"><i class="fa fa-check"></i><b>4.1.3</b> Model Output</a></li>
+<li class="chapter" data-level="4.1.4" data-path="ipm-model.html"><a href="ipm-model.html#ipm-errors"><i class="fa fa-check"></i><b>4.1.4</b> Errors</a></li>
+</ul></li>
+<li class="chapter" data-level="4.2" data-path="ipm-ex.html"><a href="ipm-ex.html"><i class="fa fa-check"></i><b>4.2</b> Step-By-Step IPM Example</a></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="gl.html"><a href="gl.html"><i class="fa fa-check"></i><b>5</b> Glossary</a><ul>
+<li class="chapter" data-level="5.1" data-path="gl-general.html"><a href="gl-general.html"><i class="fa fa-check"></i><b>5.1</b> General</a></li>
+<li class="chapter" data-level="5.2" data-path="gl-surv.html"><a href="gl-surv.html"><i class="fa fa-check"></i><b>5.2</b> Survival</a></li>
+<li class="chapter" data-level="5.3" data-path="gl-sight.html"><a href="gl-sight.html"><i class="fa fa-check"></i><b>5.3</b> Sightability</a></li>
+<li class="chapter" data-level="5.4" data-path="gl-ipm.html"><a href="gl-ipm.html"><i class="fa fa-check"></i><b>5.4</b> IPM</a></li>
+<li class="chapter" data-level="5.5" data-path="gl-mcmc.html"><a href="gl-mcmc.html"><i class="fa fa-check"></i><b>5.5</b> MCMC</a></li>
 </ul></li>
 </ul>
 
@@ -119,9 +126,9 @@
 
             <section class="normal" id="section-">
 <div id="surv-model" class="section level2">
-<h2><span class="header-section-number">3.1</span> Running a Survival Model</h2>
+<h2><span class="header-section-number">2.1</span> Running a Survival Model</h2>
 <div id="surv-load" class="section level3">
-<h3><span class="header-section-number">3.1.1</span> Loading Data</h3>
+<h3><span class="header-section-number">2.1.1</span> Loading Data</h3>
 <p>To run a survival model select <strong>Survival</strong> in the sidebar then click <strong>Setup</strong>. Select a species and DAU on the Overview tab and click the <span style="color: #3c8dbc;"><b>Download Data</b></span> button to download data from the IDFG database. Once the download is complete a dialog will confirm that the data has been downloaded and alert you to any errors present in the data (see the <a href="surv-model.html#surv-errors">errors</a> section). Data will only be read for the species and DAU selected, so if you switch either selection later you’ll have to repeat the process.</p>
 <p>Once the data is downloaded you can review it in various formats in the pane to the right. Data is pulled from SADD, so if you find individuals that plot out in the wrong area or DAU, you’ll need to fix them there.</p>
 <ul>
@@ -134,7 +141,7 @@
 <p>You can also view the data loaded from SADD on the <strong>Individuals</strong> page, where you can view raw data, encounter histories, captures, and mortality records. You can also filter to a specific animal, which can be helpful in tracking down <a href="surv-model.html#surv-errors">errors</a>.</p>
 </div>
 <div id="surv-options" class="section level3">
-<h3><span class="header-section-number">3.1.2</span> Model Options</h3>
+<h3><span class="header-section-number">2.1.2</span> Model Options</h3>
 <p>After loading survival data for a particular species and DAU move on to the Subset tab to specify the parameters for your model. Select a sex (default is all) and <a href="gl-general.html#gl-age-classes">age class</a> (default is adult) to model, then select the range of years to include in the analysis (default includes all data available).</p>
 <p>Move on to the Structure tab and use the inputs to define the model that will be run on your data. First select a <a href="gl-surv.html#gl-known-fate">known fate</a> (simple survival estimation) or <a href="gl-surv.html#gl-multi-state">multi-state</a> (estimate mortality rates by cause - currently unavailable) model. If you’re running a multi-state model use the Censor Fate input to exclude a particular source of mortality from the analysis. For example, if harvest is selected the estimated survival will answer the question “What would survival be in the absence of harvest?” Finally define how survival is allowed to vary with sex, time, and space. You must select more than 5 years for analysis to model survival as varying through time, and modeling survival as spatially varying is only available for statewide models.</p>
 <p>If you plan on adding your results to an <a href="gl-ipm.html#gl-ipm-db">IPM dataset</a> you should use the default settings:</p>
@@ -152,19 +159,19 @@
 <li>Burnin Length: 35,000</li>
 <li>MCMC Iterations: 25,000</li>
 </ul>
-<p>When you’ve loaded your data, selected the appropriate options, and defined your model structure, move on to the Run tab and click <span style="color: #3c8dbc;"><b>Fit Model</b></span> to run the model. If no errors are encountered dismiss the dialog and click <strong>Tables</strong> in the sidebar to view your results. If the model fails to run check the <a href="surv-model.html#surv-errors">errors</a> section.</p>
+<p>When you’ve loaded your data, selected the appropriate options, and defined your model structure, move on to the Run tab, specify your <a href="gl-mcmc.html#gl-mcmc">MCMC settings</a>, and click <span style="color: #3c8dbc;"><b>Fit Model</b></span> to run the model. If no errors are encountered dismiss the dialog and click <strong>Tables</strong> in the sidebar to view your results. If the model fails to run check the <a href="surv-model.html#surv-errors">errors</a> section.</p>
 </div>
 <div id="surv-output" class="section level3">
-<h3><span class="header-section-number">3.1.3</span> Model Output</h3>
+<h3><span class="header-section-number">2.1.3</span> Model Output</h3>
 <p>Results are viewed under the <strong>Tables</strong> subheading on the left under <strong>Survival</strong>. Estimates can be viewed by year or by month. Mean estimates are accompanied by the standard deviation as well as the lower and upper confidence intervals. You can copy, print, or download the data using the buttons at the top right of the table. You can also sort and filter using the boxes below the column headings.</p>
 </div>
 <div id="surv-admin" class="section level3">
-<h3><span class="header-section-number">3.1.4</span> Adding Results to IPM</h3>
+<h3><span class="header-section-number">2.1.4</span> Adding Results to IPM</h3>
 <p>Use the <strong>Admin</strong> page to add the results of your survival model to the input data for the IPM. Only add the results to an <a href="gl-ipm.html#gl-ipm-db">IPM dataset</a> if you’re sure you used the correct settings and data. If there is already survival data in the IPM data file you select for the same species, year, and unit, that data will be overwritten with the results of your current model.</p>
 <p>Select the <a href="gl-ipm.html#gl-ipm-db">IPM dataset</a> to which you want to add your estimates, and verify that the estimates themselves look reasonable, then click <span style="color: #dd4b39;"><b>Update DB</b></span> to add the estimates to the database file. DO NOT add results to the IPM database if you didn’t use the default settings outlined in the <span id="surv-options">Model Options</span> section.</p>
 </div>
 <div id="surv-errors" class="section level3">
-<h3><span class="header-section-number">3.1.5</span> Errors</h3>
+<h3><span class="header-section-number">2.1.5</span> Errors</h3>
 </div>
 </div>
             </section>
