@@ -19,11 +19,11 @@ description: "Documentation for IDFG PopR"
 
 This manual is intended to provide support and guidance for using the 
 [IDFG PopR Website][PopR] to run population models. Models covered here include 
-[Survival](#surv), [Sightability](#sight), and [IPM](#ipm).
-
-You can contribute to this document via [GitHub][Git], where you can also make [Suggestions][GitIssues] for adding or changing content.
+[Sightability](#sight), [Survival](#surv), and [IPM](#ipm).
 
 This manual was created by [Speedgoat][spdgt] and [IDFG](https://idfg.idaho.gov/) using [bookdown](https://bookdown.org/).
+
+Feedback and suggestions for improving the user manual are welcome at [eric.newkirk@speedgoat.io](mailto:eric.newkirk@speedgoat.io?cc=josh.nowak@speedgoat.io&subject=PopR%20Documentation%20Feedback).
 
 To get started with PopR, visit the [Speedgoat homepage](https://www.speedgoat.io/) and select Idaho from the login menu.
 

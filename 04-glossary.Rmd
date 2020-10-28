@@ -3,7 +3,7 @@
 ## General {#gl-general}
 
 ###### Age Classes {#gl-age-classes -}
-Age classes must be defined for each species to capture variability in parameters like survival and harvest rate, as well as to determine when animals begin to reproduce. Regardless of actual birth date animals transition to the next age class on December 15, the model anniversary used in the IPM. Assuming calves and fawns are born approximately mid-June each year, the age classes translate to roughly the following:
+Age classes must be defined for each species to capture variability in parameters like survival and harvest rate, as well as to determine when animals begin to reproduce. Regardless of actual birth date, animals transition to the next age class on December 15, the model anniversary used in the IPM. Assuming calves and fawns are born approximately mid-June each year, the age classes translate to roughly the following:
 
 * Mule Deer
     * A (Adult) - 1.5 years and up
@@ -22,13 +22,8 @@ Since winter surveys typically span a time period including two years the term B
 ###### DAU (Data Analysis Unit) {#gl-dau -}
 Recent location data from mule deer fitted with GPS radio-collars provided a more informed understanding of how mule deer populations are distributed across Idaho. In light of this new information, IDFG revised the geographical boundaries of the data analysis units (DAU) that are used for mule deer population monitoring and management and incorporated these changes into the IPM.  Some aerial surveys can no longer be viewed in the IPM because they don’t include abundance for all of the GMUs in the new DAU. Past aerial surveys were incorporated into the site through a series of conversations with area biologists. Questions about the data can be directed to Paul Atwood or Josh Nowak.
 
-## Survival {#gl-surv}
-
-###### Known Fate Survival Model {#gl-known-fate -}
-Survival models attempt to estimate the probability that an animal alive at this time will be alive at some future time. A known-fate model does this in part by assuming that the fate of every animal is known. This name was chosen early in the development process. As time has passed we have tweaked and developed the model to relax assumptions and better meet the needs of our collaborators. The full model description is beyond the scope of this Glossary, but know that the Known-Fate model selection means that the results of running a model will show the user estimates of survival and mortality. This is in contrast to the multi-state models where multiple sources of mortality can be estimated, such as death by harvest or death by predator. See also: [Multi-state Survival Model](#gl-multi-state)
-
-###### Multi-state Survival Model {#gl-multi-state -}
-The multi-state survival model allows users to estimate survival, harvest mortality rate and other mortality rate. The different estimates sum to 1 and so to be comparable to the known-fate models users should take 1 - other mortality as equivalent to survival in the known-fate context. See also: [Known Fate Survival Model](#gl-known-fate)
+###### SAMM (AKA SAD) {#gl-samm -}
+SAMM, or Statewide Animal Monitoring Master, is a database hosted by IDFG for housing monitoring data. Data is read into PopR from SAMM via API, but SAMM data cannot be edited through PopR. In order to add or edit data the changes must be made in SAMM.
 
 ## Sightability {#gl-sight}
 
@@ -66,7 +61,7 @@ An intensive aerial survey methodology to estimate the entire population size in
 The 3 snow cover categories are 0-20%, 21-79%, and >80%.  The snow cover categories impact the probability of detection and influences how the model estimates the true number of individuals.
 
 ###### Stratum {#gl-stratum -}
-The landscape is divided into separate strata based on the probability of being occupied by the species being surveyed.  Typically subunits are classified as high, medium, or low strata based on their suitability as habitat for a particular species.
+The landscape is divided into separate strata based on the probability of being occupied by the species being surveyed.  Typically subunits are classified as high, medium, or low strata based on their suitability as habitat for a particular species. Other strata should only be used after consulting an expert and in special circumstances when you do not want that subunit to be used to extrapolate to subunits that are not flown.
 
 ###### Subunit {#gl-subunit -}
 Used to define the proportion of the unit that was sampled.For example, if a unit consists of 10 subunits and the survey samples 3 of the 10 subunits then 3/10 or .3 of the unit was sampled. This is used to extrapolate sightability estimates such that if this same survey produced a count of 100 then the estimate is 100/.3 or 333 animals in the unit.
@@ -84,6 +79,14 @@ The variance components of the sightability output are of interest to the user b
 
 ###### Vegetation {#gl-veg -}
 There are 5 vegetation class categories including grass/open/agriculture, sagebrush, juniper/mtn. mahogany, mtn. brush/aspen, and conifer. Vegetation class represents the dominant vegetation within a 30m buffer around where an individual deer or group of deer is observed. The vegetation class categories impact the probability of detection and influences how the model estimates the true number of individuals. PopR has data columns for all habitat data collected on IDFG elk and mule deer sightability and composition survey forms. IDFG elk aerial survey data sheets contain only % screen and that is the only habitat variable used in the elk sightability model. IDFG mule deer aerial survey and composition data sheets contain data columns for % screen, screen type, and veg type and veg type is the only habitat variable currently used in the mule deer sightability model.
+
+## Survival {#gl-surv}
+
+###### Known Fate Survival Model {#gl-known-fate -}
+Survival models attempt to estimate the probability that an animal alive at this time will be alive at some future time. A known-fate model does this in part by assuming that the fate of every animal is known. This name was chosen early in the development process. As time has passed we have tweaked and developed the model to relax assumptions and better meet the needs of our collaborators. The full model description is beyond the scope of this Glossary, but know that the Known-Fate model selection means that the results of running a model will show the user estimates of survival and mortality. This is in contrast to the multi-state models where multiple sources of mortality can be estimated, such as death by harvest or death by predator. See also: [Multi-state Survival Model](#gl-multi-state)
+
+###### Multi-state Survival Model {#gl-multi-state -}
+The multi-state survival model allows users to estimate survival, harvest mortality rate and other mortality rate. The different estimates sum to 1 and so to be comparable to the known-fate models users should take 1 - other mortality as equivalent to survival in the known-fate context. See also: [Known Fate Survival Model](#gl-known-fate)
 
 ## IPM {#gl-ipm}
 
