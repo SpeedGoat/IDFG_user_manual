@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2020.9.22)  23 SEP 2020 19:24
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2020.9.22)  28 OCT 2020 16:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -862,43 +862,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Chapter 2.
 [7
 
-] [8]
-File: ./www/surv_01.PNG Graphic file (type bmp)
-<./www/surv_01.PNG>
-[9]
-File: ./www/surv_02.PNG Graphic file (type bmp)
-<./www/surv_02.PNG>
-File: ./www/surv_04.PNG Graphic file (type bmp)
-<./www/surv_04.PNG>
-[10]
-File: ./www/surv_05.PNG Graphic file (type bmp)
-<./www/surv_05.PNG>
-File: ./www/surv_06.PNG Graphic file (type bmp)
-<./www/surv_06.PNG>
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[11]
-File: ./www/surv_07.PNG Graphic file (type bmp)
-<./www/surv_07.PNG>
-File: ./www/surv_08.PNG Graphic file (type bmp)
-<./www/surv_08.PNG>
-
-Underfull \vbox (badness 4084) has occurred while \output is active []
-
-[12]
-File: ./www/surv_10.PNG Graphic file (type bmp)
-<./www/surv_10.PNG>
-File: ./www/surv_12.PNG Graphic file (type bmp)
-<./www/surv_12.PNG>
-
-Underfull \vbox (badness 2005) has occurred while \output is active []
-
-[13] [14]
-Chapter 3.
-[15
-
-] [16] [17] [18] [19]
+] [8] [9] [10] [11]
 File: ./www/sight_01.PNG Graphic file (type bmp)
 <./www/sight_01.PNG>
 File: ./www/sight_02.PNG Graphic file (type bmp)
@@ -906,7 +870,7 @@ File: ./www/sight_02.PNG Graphic file (type bmp)
 
 Underfull \vbox (badness 1708) has occurred while \output is active []
 
-[20]
+[12]
 File: ./www/sight_03.PNG Graphic file (type bmp)
 <./www/sight_03.PNG>
 File: ./www/sight_04.PNG Graphic file (type bmp)
@@ -914,7 +878,7 @@ File: ./www/sight_04.PNG Graphic file (type bmp)
 
 Underfull \vbox (badness 1152) has occurred while \output is active []
 
-[21]
+[13]
 File: ./www/sight_05.PNG Graphic file (type bmp)
 <./www/sight_05.PNG>
 File: ./www/sight_06.PNG Graphic file (type bmp)
@@ -922,12 +886,12 @@ File: ./www/sight_06.PNG Graphic file (type bmp)
 
 Underfull \vbox (badness 5802) has occurred while \output is active []
 
-[22]
+[14]
 File: ./www/sight_07.PNG Graphic file (type bmp)
 <./www/sight_07.PNG>
 File: ./www/sight_08.PNG Graphic file (type bmp)
 <./www/sight_08.PNG>
-[23]
+[15]
 File: ./www/sight_09.PNG Graphic file (type bmp)
 <./www/sight_09.PNG>
 File: ./www/sight_15.PNG Graphic file (type bmp)
@@ -935,16 +899,52 @@ File: ./www/sight_15.PNG Graphic file (type bmp)
 
 Underfull \vbox (badness 2698) has occurred while \output is active []
 
-[24] [25] [26
+[16] [17] [18
 
 ]
+Chapter 3.
+[19] [20]
+File: ./www/surv_01.PNG Graphic file (type bmp)
+<./www/surv_01.PNG>
+[21]
+File: ./www/surv_02.PNG Graphic file (type bmp)
+<./www/surv_02.PNG>
+File: ./www/surv_04.PNG Graphic file (type bmp)
+<./www/surv_04.PNG>
+[22]
+File: ./www/surv_05.PNG Graphic file (type bmp)
+<./www/surv_05.PNG>
+File: ./www/surv_06.PNG Graphic file (type bmp)
+<./www/surv_06.PNG>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[23]
+File: ./www/surv_07.PNG Graphic file (type bmp)
+<./www/surv_07.PNG>
+File: ./www/surv_08.PNG Graphic file (type bmp)
+<./www/surv_08.PNG>
+
+Underfull \vbox (badness 4084) has occurred while \output is active []
+
+[24]
+File: ./www/surv_10.PNG Graphic file (type bmp)
+<./www/surv_10.PNG>
+File: ./www/surv_12.PNG Graphic file (type bmp)
+<./www/surv_12.PNG>
+
+Underfull \vbox (badness 2005) has occurred while \output is active []
+
+[25] [26]
 Chapter 4.
 File: ./www/ipm_flowchart.PNG Graphic file (type bmp)
 <./www/ipm_flowchart.PNG>
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[27] [28] [29]
+[27
+
+] [28] [29]
 Missing character: There is no λ in font [lmroman10-regular]:mapping=tex-text;!
 [30]
 File: ./www/ipm_01.PNG Graphic file (type bmp)
@@ -1014,7 +1014,7 @@ Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 1027.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1027.
 
 Package rerunfilecheck Info: File `_main.out' has not changed.
-(rerunfilecheck)             Checksum: 40B68D73941522CDC4772B2B69D7892A;2250.
+(rerunfilecheck)             Checksum: A80F35EAF6E3B5217383CF17935DF6D0;2250.
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
