@@ -24,7 +24,7 @@
 <meta name="author" content="Speedgoat" />
 
 
-<meta name="date" content="2020-10-28" />
+<meta name="date" content="2020-11-06" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -127,8 +127,7 @@
             <section class="normal" id="section-">
 <div id="sight" class="section level1">
 <h1><span class="header-section-number">2</span> Sightability</h1>
-<p>Sightability models use aerial survey data combined with detection probability
-models to estimate total abundance within a sampling unit.</p>
+<p>Sightability models use aerial survey data combined with detection probability models to estimate total abundance within a sampling unit.</p>
 <p>The basic idea behind sightability is a fairly simple process. First the sightability of the group is estimated by taking the covariate values and previously estimated coefficients. For example, if the model had one covariate called veg and the value of veg for a given observation was .8 then we can estimate sightability with something like:</p>
 <p><span class="math inline">\(logit(sight) = 1.1 - 0.6 * veg\)</span></p>
 <p>Here the average sightability is something like logit(1.1) or 0.75 and the effect of veg is roughly -0.6, so if we plug in our observation of 0.8 we would get</p>
