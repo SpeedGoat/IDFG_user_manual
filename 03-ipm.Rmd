@@ -1,8 +1,12 @@
+--- 
+title: "IPM"
+---
+
 # IPM {#ipm}
 
 PopR allows you to combine data from various sources to model wildlife populations using an integrated population model (IPM), leading to more robust and defensible estimates. First the data from each source are modeled independently to estimate individual population parameters, such as sex ratio and survival. Then these results are combined in the IPM to find the best fit for all of the available data.
 
-![](./www/intro_01.PNG)
+![](./www/ipm_flowchart.PNG)
 
 ## Running the IPM {#ipm-model}
 
@@ -55,6 +59,10 @@ All plots have tools along the right side which allow the user to zoom in on dif
 To generate a report click on **Build Report** in the sidebar, then click <span style="color: #3c8dbc;"><b>Download</b></span>. When the download is finished click on the saved html file to open it. The report combines information about your settings, input data, and results in a single file. Especially important in the report is the Diagnostics section, which explains how well the model performed and provides guidance on any changes that might improve your results.
 
 ### Errors {#ipm-errors}
+
+###### Reporting errors {-}
+
+This section of the documentation is a work in progress. We need your feedback to identify and document the errors users commonly experience running models with PopR - you can help us by sending an email to  [eric.newkirk@speedgoat.io](mailto:eric.newkirk@speedgoat.io?cc=josh.nowak@speedgoat.io&subject=PopR%20Error) any time you experience an error on the site. Please include as much information as you can about your settings, data, and the error message you received, including screenshots if possible. Thanks!
 
 ## Step-By-Step IPM Example {#ipm-ex}
 

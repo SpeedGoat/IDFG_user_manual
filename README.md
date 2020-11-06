@@ -19,7 +19,7 @@
   <p align="center">
     Documentation for the Idaho PopR website
     <br />
-    <a href="https://github.com/ericnewkirk/IDFG_user_manual"><strong>View The Book »</strong></a>
+    <a href="https://ericnewkirk.github.io/IDFG_user_manual"><strong>View The Book »</strong></a>
     <br />
     <br />
     <a href="https://github.com/ericnewkirk/IDFG_user_manual/issues">Report A Bug</a>
