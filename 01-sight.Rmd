@@ -41,13 +41,25 @@ The extrapolation step also demonstrates that the density of animals is assumed 
 
 ## Sightability Data Entry {#sight-de}
 
-There are 3 separate tabs available for entering sightability data. The GPS tab allows you to upload waypoints from a GPS file, the metadata tab allows you to add information about the overall survey, and the observation tab allows you to enter the actual counts.
+In order to run a sightability model two types of data must be entered - the survey design (stratification) information, and the counts recorded during the flights. In general it's best to enter the survey design information before the actual flights take place, although you'll need to return to the survey design tool to verify which subunits were actually surveyed after the flights.
 
-When entering sightability data keep in mind that the model won't work unless the number of subunits sampled and the number of subunits available in each strata are defined accurately. It's critical to enter this information correctly on the metadata and observation entry tabs, including entering observations of 0 animals for subunits that were flown but where no animals were found.
+### Survey Design Data Entry {#survey-design-de}
 
-### GPS Data Entry
+To enter survey design information expand the **Data Entry** group in the sidebar and click **Survey Design**. The first time you navigate to the Survey Design page a wizard will appear to guide you through the initial steps. Select the species, DAU, survey type, and the field season ([BioYear](#gl-bio-year)) during which the survey will be conducted, and click the Next button to continue. If design information is available from previous field seasons and no information has been entered yet for the current survey, the following page of the wizard will allow you to use the stratification from the previous survey as a head start if desired. Click Finish to close the wizard and begin entering survey design information. If you need to return to the wizard to change to a different survey, you can bring it up by clicking the gear icon in the lower left and clicking Setup Wizard.
 
-The first step in entering sightability data is to upload GPS data for your survey (if you don't have a .csv file containing GPS data for your survey you can skip this step). To get started click **Sightability** in the sidebar, then **GPS Data Entry**.
+The first step is to assign each subunit in your DAU to a particular [density stratum](#gl-stratum) using the table, the map, or a combination of the two. Changing the stratum designation in the table is as simple as editing the value in the stratum column. To assign a particular subunit to a stratum using the map first select the desired stratum in the dropdown at the upper right, then click on the subunit in the map pane to assign it.
+
+Once the subunits have been stratified, identify the subset of subunits within each stratum that will be surveyed. You can select a random sample within the survey design page by clicking the Sample Subunits button, or if you need to manually specify which subunits have been selected you can check the Selected box in the table for each subunit you plan to sample. Now that you've stratified your subunits and selected a subset to survey, you can download the survey design as a shapefile, gpx, kml, or csv, and it's time to fly!
+
+**IMPORTANT**
+Once you've completed the survey, you must return to the survey design tool to identify which of the selected subunits you actually surveyed. If you enter count data for a particular subunit but don't check the Surveyed box for it on the survey design tab, that subunit will be switched to "Other." Because the Surveyed column on the survey design tab is used to determine which subunits were flown, there's no need to enter counts of 0 for subunits that were surveyed without finding any animals.
+
+### Count Data Entry {#sight-count-de}
+
+After you fly a survey enter the information about the animals you observed in the **Mule Deer Composition**, **Mule Deer Abundance**, or **Elk Surveys** tab in the **Data Entry** group. The GMU and date are required, and typing into the date field won't work (you need to click on the desired date in the popup calendar). Each unique combination of GMU and date needs to be entered separately, even if you flew subunits from more than one GMU in the same flight. You can enter whatever you like in the flight field and it will be visible in the dropdown for bringing up existing data. When you've filled in the upper section of the form click the <span style="color: #0d7dc5;"><b>Save</b></span> button to save the survey information.
+
+Once the upper form has been saved 2 spreadsheets should appear below - one for the target species (deer/elk) and one for incidental sightings. Enter the subunit, total count, counts by demographic, and covariates for each group just as they appear on the datasheet. You can also enter waypoint names if you took GPS locations during the flight (see below for instructions on populating coordinates from a file).
+
 
 #### GPS data definition {-}
 
