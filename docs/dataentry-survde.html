@@ -4,18 +4,18 @@
 
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>6.4 IPM | Glossary</title>
+  <title>2.1 Survey Design | Glossary</title>
   <meta name="description" content="Documentation for IDFG PopR" />
   <meta name="generator" content="bookdown 0.27 and GitBook 2.6.7" />
 
-  <meta property="og:title" content="6.4 IPM | Glossary" />
+  <meta property="og:title" content="2.1 Survey Design | Glossary" />
   <meta property="og:type" content="book" />
   
   <meta property="og:description" content="Documentation for IDFG PopR" />
   
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="6.4 IPM | Glossary" />
+  <meta name="twitter:title" content="2.1 Survey Design | Glossary" />
   
   <meta name="twitter:description" content="Documentation for IDFG PopR" />
   
@@ -30,8 +30,8 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   
   
-<link rel="prev" href="gl-surv.html"/>
-<link rel="next" href="gl-mcmc.html"/>
+<link rel="prev" href="dataentry.html"/>
+<link rel="next" href="sight.html"/>
 <script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -139,35 +139,21 @@
           <div class="page-inner">
 
             <section class="normal" id="section-">
-<div id="gl-ipm" class="section level2 hasAnchor" number="6.4">
-<h2><span class="header-section-number">6.4</span> IPM<a href="gl-ipm.html#gl-ipm" class="anchor-section" aria-label="Anchor link to header"></a></h2>
-<div id="gl-ipm-db" class="section level6 unnumbered hasAnchor">
-<h6>IPM Database<a href="gl-ipm.html#gl-ipm-db" class="anchor-section" aria-label="Anchor link to header"></a></h6>
-<p>IPM database files contain the estimates from survival and sightability models, and are used when running the IPM. As of September 2020 there are 3 IPM database files in use for IDFG:</p>
-<ol style="list-style-type: decimal">
-<li>Atwood.RData – DO NOT USE, this database is for development and research purposes only</li>
-<li>mule_deer_independent.RData – This database will use survival data from the DAU you are modeling over multiple years when there is not any survival data for the DAU and the year in the database. Use this database if the DAU you are modeling has a large amount of data available and survival is relatively constant between years.</li>
-<li>mule_deer_shared.RData - Strongly recommended. This database will use survival data from other DAU’s in the state for the current year when there is not any survival data for the DAU and year in the database. Use this database if the DAU you are modeling has little to no data available or if survival is highly variable between years.</li>
-</ol>
+<div id="dataentry-survde" class="section level2 hasAnchor" number="2.1">
+<h2><span class="header-section-number">2.1</span> Survey Design<a href="dataentry-survde.html#dataentry-survde" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>The first step to entering survey data is to create a survey design. To get started click on <strong>Data Entry</strong> on the sidebar and then click <strong>Survey Design</strong> from the drop-down menu. To begin, you need to specify the <strong>Species</strong>, <strong>DAU</strong>, <strong>Survey Type</strong>, and <strong>Survey Year</strong> that you want to design. Once this information is entered, the map will zoom to the selected DAU showing the DAU and corresponding subunits. If the Subunits within the DAU have previously been stratified into High and Other strata, the strafication will be visible on the map, and in the table to the right of the map. To update the subunit’s strafication, you have two options. 1) You can use the box in the upper right hand corner of the map titled <strong>Click subunit to assign to:</strong> to select a stratum you want to apply to a subunit, and then click the Subunit on the map. Once the subunit is clicked, it will change color to the selected stratum. Or, 2) you can use the table to the right of the map to change the strata. By clicking in the stratum column next to the subunit you would like to change, you can select the desired strata from the drop-down menu.</p>
+<p>Once the DAU is correctly stratified, you can create a survey by clicking on the <span style="color: #004672;"><b>Sample Subunits</b></span> button. This will open a window allowing you to specify the time it take to fly one subunit, the proportion of each strata to sample, and the Sampling Method.The survey design tool allows you to randomly sample subunits within the DAU using either <strong>Random</strong> or <strong>GRTS</strong> sampling. GRTS (Generalized Random Tesselation Stratified) sampling is a spatially-balanced sampling framework. When changes are made in the <strong>Time to fly one subunit</strong> or the <strong>Proportion of High to Sample</strong>, these will result in changes in the Subunits to fly and the total flight time in the table at the bottom of the pop-up window. Once these decisions have been made, you can then click on the <span style="color: #004672;"><b>Sample</b></span> button. The subunits selected to be sampled with have a blue circle on the map and will have a check box in the <strong>Selected</strong> column of the table. You can then click on the <span style="color: #004672;"><b>Save Survey</b></span> button to save the survey. Once the survey is saved, you can view the survey details by clicking on the <strong>Survey Details</strong> button.</p>
+<p>Once the survey is flown, you must confirm that all subunits selected to be flown in the survey design were in fact surveyed. allowing the sightability model to correctly extrapolate the results of the survey to the entire DAU. To record which subunits were surveyed, check the box in the <strong>Surveyed</strong> column by clicking on it. This completes the survey design process.</p>
+
 </div>
-<div id="gl-ipm-weather" class="section level6 unnumbered hasAnchor">
-<h6>Future Weather<a href="gl-ipm.html#gl-ipm-weather" class="anchor-section" aria-label="Anchor link to header"></a></h6>
-<p>Future weather covariates were developed using Mark Hurley’s dissertation and the analyses contained therein.</p>
-<ul>
-<li>Average: Mean observed weather conditions</li>
-<li>Good: Upper 95% quantile of observed weather</li>
-<li>Bad: Lower 5% quantile of observed weather</li>
-<li>None: Do not use weather data covariates in the analysis</li>
-</ul>
-</div>
-</div>
+<!-- </div> -->
             </section>
 
           </div>
         </div>
       </div>
-<a href="gl-surv.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-<a href="gl-mcmc.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+<a href="dataentry.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="sight.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
