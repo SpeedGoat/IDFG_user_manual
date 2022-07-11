@@ -4,9 +4,9 @@
   "platform": "4.1.1",
   "metadata": {
     "appmode": "rmd-static",
-    "primary_rmd": "index.Rmd",
-    "primary_html": "index.html",
-    "content_category": null,
+    "primary_rmd": "index.html",
+    "primary_html": null,
+    "content_category": "site",
     "has_parameters": false
   },
   "packages": {
@@ -690,7 +690,7 @@
       "checksum": "2b69754fe2dd7d07fd3a8e46690af3ee"
     },
     "404.html": {
-      "checksum": "844eeabde59fe78608ea6da0535d5d5b"
+      "checksum": "cae0b83e24d4b70e027eeb52f1fbf5e1"
     },
     "book.bib": {
       "checksum": "7fc604c4c1f13f5f02d0045cc6eed512"
@@ -826,6 +826,9 @@
     },
     "docs/libs/jquery-3.6.0/jquery-3.6.0.min.js": {
       "checksum": "8fb8fee4fcc3cc86ff6c724154c49c42"
+    },
+    "docs/reference-keys.txt": {
+      "checksum": "61aadb246b86c6ceae99f0e8487a7214"
     },
     "docs/search_index.json": {
       "checksum": "6312f37d7cd9f985c5461168a6fb02ee"
@@ -1014,7 +1017,7 @@
       "checksum": "e7891395483e3550f583a02a0c6f98be"
     },
     "introduction.html": {
-      "checksum": "0c74fef53a62db22b07929c79cc23fec"
+      "checksum": "1d613709b1fbc03162bd3f903ec66ed1"
     },
     "libs/anchor-sections-1.1.0/anchor-sections-hash.css": {
       "checksum": "cc71c646c089ba898bbfdc599c3b08a1"
