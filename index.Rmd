@@ -2,7 +2,7 @@
 title: "Idaho Fish and Game PopR Website User Manual"
 author: "Speedgoat"
 date: "`r Sys.Date()`"
-site: https://popr.cfc.umt.edu/connect/#/apps/f22ff40a-2a95-4a5d-92cf-e8b60ace62a5/info
+site: bookdown::bookdown_site
 output:
   bookdown::gitbook:
     split_by: section
