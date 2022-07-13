@@ -4,7 +4,7 @@ title: "Data Entry"
 
 # Data Entry {#dataentry}
 
-The Speedgoat website allows users to design sightability/composition surveys and enter survey data directly into the Speedgoat survey database.The data entry functionality requires users to set-up an abundance or composition survey using stratified sampling, and enter the resultant data from the survey so the survey design is saved with the survey data. The data can then be use in the sightability model and thus directly populate the IPM Database. To enter survey data, the user must 1) create a survey design and 2) enter data from the survey.
+The Speedgoat  website allows users to design sightability/composition surveys and enter survey data directly into the Speedgoat survey database.The data entry functionality requires users to set-up an abundance or composition survey using stratified sampling, and enter the resultant data from the survey so the survey design is saved with the survey data. The data can then be use in the sightability model and thus directly populate the IPM Database. To enter survey data, the user must 1) create a survey design and 2) enter data from the survey.
 
 ## Survey Design {#dataentry-survde}
 
