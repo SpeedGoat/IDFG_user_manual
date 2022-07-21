@@ -81,7 +81,7 @@ Computer > Galaxy Tab S2 > Tablet > Documents or Download
 
 ### Metadata Entry
 
-The next step is to enter the metadata for your survey. The Mmetadata entry tool exists to define the survey and prevents the user from having to so re-enter data that remains constant for a survey period. For example, the total number of subunits available to sample in each stratum remains constant over an entire survey period (generally a single year).
+The next step is to enter the metadata for your survey. The metadata entry tool exists to define the survey and prevents the user from having to re-enter data that remains constant for a survey period. For example, the total number of subunits available to sample in each stratum remains constant over an entire survey period (generally a single year).
 
 Click **Metadata Entry** in the sidebar under **Sightability**, then select the species and [survey type](#gl-sight-survey). Enter the date the survey took place, the type of [aircraft](#gl-aircraft) used, and the number of observations (rows) recorded on the datasheet. Select the region and analysis unit, and if you uploaded a file in the previous step, select it in the GPS Data File input. Enter the total number of subunits available in each [density stratum](#gl-stratum) (not the number flown), and finally enter any comments or notes about the survey. Once the form is complete click the <span style="color: #dd4b39;"><b>Submit Response</b></span> button to continue. A dialog will appear confirming that the data were saved.
 
