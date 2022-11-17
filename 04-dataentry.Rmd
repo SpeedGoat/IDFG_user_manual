@@ -41,7 +41,7 @@ To use the map, choose which strata you would like to assign to the subunits wit
 
 <center>![](./www/de_walk6.png)</center>
 
-You can also assign subunits to different strata by using the table to manually change the Stratum column from Other to whichever is appropriate for your experiment. Note that any subunit left in the Other strata will not be sampled. 
+You can also assign subunits to different strata by using the table to manually change the [<b>Stratum</b>](#gl-stratum){style="color: #086e04;"} column from Other to whichever is appropriate for your experiment. Note that any subunit left in the Other strata will not be sampled. 
 
 <center>![](./www/de_walk7.png)</center>
 

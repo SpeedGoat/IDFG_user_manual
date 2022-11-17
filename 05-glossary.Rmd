@@ -4,14 +4,20 @@ title: "Glossary"
 
 # Glossary {#gl}
 
-**Beta:** The strength of each variable in the model itself. Categorical variables are represented by a range of binned values, but for the model to create an output it must be converted to a numerical value that modifies the default value. For example, the VegClass covariate changes how easy it is to see an animal. VegClasses differ in the amount that they can obscure vision, but you will notice the classes that obscure visions the most have a negative beta value, which tells us that they have a negative impact on our probability to see an animal.
+###### Beta {#gl-beta -}
+The strength of each variable in the model itself. Categorical variables are represented by a range of binned values, but for the model to create an output it must be converted to a numerical value that modifies the default value. For example, the VegClass covariate changes how easy it is to see an animal. VegClasses differ in the amount that they can obscure vision, but you will notice the classes that obscure visions the most have a negative beta value, which tells us that they have a negative impact on our probability to see an animal.
 
-**Composition survey:** A sightability survey which focuses on sex ratios
+###### Composition Survey {#gl-comp -}
+A sightability survey which focuses on sex ratios
 
-**DAU:** Data Analysis Units separate Idaho into distinct management areas for each species. Each one has a specific name and is further divided into subunits, which allow even more specificity.
+###### DAU (Data Analysis Unit) {#gl-dau -}
+Data Analysis Units separate Idaho into distinct management areas for each species. Each one has a specific name and is further divided into subunits, which allow even more specificity.
 
-**Model value:** The numerical value that the model assigns to different covariates. In the User Interface, different covariates have helpful labels like "Snow Cover", but in actual programming language this would make code unnecessarily long and complicated, so the computer stores them as simple numerical values instead.
+###### Model Value {#gl-modelv -}
+The numerical value that the model assigns to different covariates. In the User Interface, different covariates have helpful labels like "Snow Cover", but in actual programming language this would make code unnecessarily long and complicated, so the computer stores them as simple numerical values instead.
 
-**Sightability-Abundance Survey:** A sightability survey which focuses on abundance
+###### Sightability-Abundance Survey {#gl-sightabundance -}
+A sightability survey which focuses on abundance
 
-**Stratum:**  Stratum are used to organize habitat subunits by how well they would work as habitat for the animal being surveyed. The “high” strata group represents subunits that contain the best habitat, “low” is the group that has the worst habitats, and “medium” falls in between. Subunits are determined by previous observations from biologists and snow cover.
+###### Stratum {#gl-stratum -}
+Stratum are used to organize habitat subunits by how well they would work as habitat for the animal being surveyed. The “high” strata group represents subunits that contain the best habitat, “low” is the group that has the worst habitats, and “medium” falls in between. Subunits are determined by previous observations from biologists and snow cover.
