@@ -17,11 +17,9 @@ description: "Documentation for IDFG PopR"
 
 # Introduction
 
-This manual is a support document for the IDFG PopR website, which was created to streamline the process of running population models including [IPM](#ipm), [Sightability](#sight), and [Survival](#surv), as well as a framework for uploading survey [data](#de).
+This manual is a support document for the IDFG PopR website. The PopR website streamlines the processes of dataentry to analysis by allowing the user to enter [data](#de) and fit models in one location. Users can fit [integrated population models](#ipm), [sightability models](#sight), and [survival models](#surv) using the PopR interface.
 
-At the top right of your page is a help toolbar. From left to right, the question mark brings you to the Speedgoat homepage, the little bug icon allows you to send a bug report to the speedgoat team, the lightbulb icon allows you to send the team an idea you have for a new feature, the broadcast symbol is a link to the speedgoat blog, and the lifering gives direct contact information for Josh and Paul.
-
-Each tool has its own chapter, which includes an Overview, a Walkthrough, and a reference page for each separate section within the tools. The Overview gives a general description of what a tool is and how it works, as well as hypothetical use cases for the tool. The Walkthrough is a step-by-step guide which explains how to load data and generate analyses with each tool. The reference page gives a more detailed explanation of each page, as well as how to navigate the various menus.
+Each tool has its own chapter, which includes an Overview, a Walkthrough, and a reference page for each tab. The Overview gives a general description of what a tool is and how it works, as well as use cases for the tool. The Walkthrough is a step-by-step guide which explains how to load data and generate analyses with each tool. The reference page gives a more detailed explanation of each page, as well as how to navigate the various menus.
 
 Words that are [<b>green and bold</b>]{style="color: #086e04;"} can be found in our glossary section at the end of the book, and words that are [<b>blue and bold</b>]{style="color: #196eb0;"} denote icon labels.
 
@@ -31,4 +29,4 @@ Feedback and suggestions for improving the user manual are welcome at [wyatt.nie
 
 To get started with PopR, visit the [Speedgoat homepage](https://www.speedgoat.io/) and select Idaho from the login menu.
 
-<center>[![Logo](./www/spdgt_logo.png)](https://www.speedgoat.io)</center>
+<center>[![Logo](./docs/www/spdgt_logo.png)](https://www.speedgoat.io)</center>

@@ -4,47 +4,51 @@ title: "IPM"
 
 # IPM {#ipm}
 
-An IPM, or Integrated Population Model, combines data from many sources in its analyses for the sake of  estimates that acknowledge the many factors that can influence abundance and survival. Our IPM uses data from survival and sightability models, as well as harvest data from the IDFG database to calculate rates like survival and sex ratios for an entire [<b>DAU</b>]{style="color: #086e04;"}, extrapolated to the entire unit and better informed by all the different metrics that are considered in the process of fitting the model.
+An Integrated Population Model(IPM), jointly analyzes data on population size and demographic parameters. Data collected in the field inform the demographic parameters in the model and unifying the analyses of multiple sources of data. The outputs from survival models and sightability models run in the PopR website and harvest data from the IDFG database are used as data in the IDFG IPM. The IPM analyzes populations at the [<b>DAU</b>]{style="color: #086e04;"} level.
 
 ## Walkthrough {#ipm-model}
 
-Using the IPM tool can be split into two major processes: preparing data and looking at data.
+Using the IPM tool can be split into two major processes: fitting the IPM and reviewing the estimates.
 
-### Preparing Data {#ipm-load}
+### Fiting the IPM {#ipm-load}
 
 Click on the Setup tab, the first dropdown under the IPM tool menu.
 
 <center>![](./www/ipm_walk1.png)</center>
 
-On the top left of the page should be a window labeled Overview, and this is where you determine the data that you run through the IPM. Select the database you want to retrieve the data from, then make sure you choose your Species, [<b>DAU</b>]{style="color: #086e04;"}, Unit, and Weather before you click [<b>Fetch Harvest Data</b>]{style="color: #196eb0;"} on the bottom right of the Overview window to retrieve the specific data you requested.
+On the top left of the page is a window labeled Overview, and this is where you determine the data used in the IPM. Select the Species, [<b>DAU</b>]{style="color: #086e04;"}, DAU, and Unit(if the species selected allows analysis at the unit level) you want to analyze. Next, select the IPM Database that contains the demographic data you want to use for the analysis. If you want to predict juvenile survival under different weather scenarios, select the prefered Future Weather, otherwise leave this at the default.  To upload harvest data from the IDFG harvest database click [<b>Fetch Harvest Data</b>]{style="color: #196eb0;"}.
 
 <center>![](./www/ipm_walk2.png)</center>
 
-Once the data is loaded, you should get a popup dialog letting you know that the process was successful. It will also prompt you to proceed to the "Structure" tab (At the top left of the page next to the Overview tab), which is where we will continue our data preparation.
+Once the harvest data is loaded, you will get a popup dialog letting you know that the process was successful. It will also prompt you to proceed to the "Structure" tab (At the top left of the page next to the Overview tab), to select the structure of the population model.
 
-The Structure tab allows you to select whether your survival and reproduction will have a constant or time varying data variance. The defaults were chosen to be well-suited to a variety of situations, so most of the time clicking [<b>"Default Structure"</b>]{style="color: #196eb0;"} will be all you need to do here. Often the inputs that appear when the tool is opened are actually not the same as those that are selected when you press [<b>"Default Structure"</b>]{style="color: #196eb0;"}, so make sure you click that before you move on to Harvest if those are the inputs you are planning to use.
+You can view the downloaded harvest data and demographic data present in the selected IPM database in tabular form below the setup panel, or in plots to the right. Please check to make sure the data you expect to be present is available in the database you selected and gut check the harvest data as this is pulled straight from the IDFG harvest database. IF an abundance or composition survey is not present in the data, you may need to go to the sightability tab to analyze a survey or if the data has not been entered, you may need to enter it in the Data Entry Tab prior to running the sightability or composition analysis. (May be benefical to add an image here)
+
+The Structure tab allows you to select the structure of survival and reproduction in the population model. The time varying option allows the parameter of interest to vary annually and the constant option holds the parameter of interest constant. The defaults represent the life history speed and biology of the species selected, and we suggest clicking [<b>"Default Structure"</b>]{style="color: #196eb0;"} to set to the species default. Often the inputs that appear when the tool is opened are actually not the same as those that are selected when you press [<b>"Default Structure"</b>]{style="color: #196eb0;"}, so make sure you click that before you move on to Harvest if those are the inputs you are planning to use.
 
 <center>![](./www/ipm_walk4.png)</center>
 
-After you select your Structure, you can move on to the Harvest Tab. Decide your effort variable and the years that you will be conducting your analysis, then look at the given information for the years that will be forecast. You can change the Harvest by double clicking the numbers and typing in new entries.
+After you select your Structure, you can move on to the Harvest Tab. If using population reconstruction, the harvest tab allows you to select the effort variable used to model harvest mortality. Select the effort variable that best describes an individuals risk of harvest in the area being modeled. If you decide to predict the population past the last year of data, you can specify level of harvest for each year into the future to assess how changes in harvest management will affect the population trajectory, survival, and harvest rate. You can change the Harvest by double clicking the numbers and typing in new entries. 
 
 <center>![](./www/ipm_walk5.png)</center>
 
-Our next step is the Run tab, which again already has a decent set of default values loaded. Adjust your Burnin Length, MCMC iterations, and Thinning Length. Decide whether you would like to automate convergence (This may increase the time it takes to run the model).
+Our next step is to set the length of time you want to run the model. The run tab allows you to select the Burnin Lenght - the number of times values are tried by the model, the MCMC iterations- the number of iterations to save for plotting after burnin is reached, and thinning- the number of values to save each time values are selected to fit the model. The default values provided are often a good starting point, however, if the models are not converging, maximizing the Burnin can help with model convergence. If maximizing the burnin is unsuccessful, you can check automate convergence which will run the model until convergence is reached. As a warning this may take a long time.
 
 <center>![](./www/ipm_walk6.png)</center>
 
-Once you are satisfied with all of the inputs outlined above, click [<b>Fit Model</b>]{style="color: #196eb0;"} to begin analysis. This should take some time, but you will get a dialog box letting you know when the process is complete
+Once you are satisfied with all of the inputs outlined above, click [<b>Fit Model</b>]{style="color: #196eb0;"} to begin analysis. This should take some time, but you will get a dialog box letting you know when the process is complete. While the model is running, the website will not perform operations if you attempt to explore different plots or tabs.
 
-### Looking at Data {#ipm-look}
+### Reviewing the Results {#ipm-look}
 
 (NOTE: This section will only work if you completed the steps above to prepare your data and fit your model beforehand.)
 
-To look at the data you prepared, wait until the model that you initiated in the setup tab has finished running, then go ahead and click the Plots tab on the IPM dropdown menu to check the results. Hovering your mouse over a point on a plot will give you the parameter, year, age, sex, control limits, and mean associated with the dataset that created the data point.
+To view the results of the IPM, wait until the model has finished running, then click the Plots tab on the IPM dropdown menu to check the results. Hovering your mouse over the lines in each plot will allow you to view the parameter estimates from the model, and hovering over the points allows you to view the observational data used as inputs to the model to inform the parameter.
 
 <center>![](./www/ipm_walk7.png)</center>
 
-You can also check the model output by clicking the Tables tab right below the Plots one on the IPM dropdown. Rhat values greater than 1.1 are highlighted in red, which means the model may not have converged and should be run again after modifying the settings on the Run tab in the Setup tool. The first ten entries that appear when you open the table tab are not the only outputs of the model. You will notice that you may navigate the pages with the list to the bottom right, or you may increase the number of entries visible at the top left of the page, using the [<b>Show (10) Entries</b>]{style="color: #196eb0;"} dropdown.
+You can also view the model output by clicking the Tables tab right below the Plots tab on the IPM dropdown. You can navigate the results by filtering within a column, view more results by selecting [<b>Show (10) Entries</b>]{style="color: #196eb0;"} at the top left of the page, or copy, print, or download the visible results using the associated buttons in the topright. 
+
+Model diagnostics. One way to determine if the model fit correctly is to assess model convergence. Rhat values are a measure of how well the model greater than 1.1 are highlighted in red, which means the model may not have converged and should be run again after increasing the Burnin length in Run tab in the Setup tool. 
 
 <center>![](./www/ipm_walk8.png)</center>
 
