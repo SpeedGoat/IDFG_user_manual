@@ -14,7 +14,7 @@ Things often do not go to plan, and so more complicated models need to be create
 
 ## Walkthrough {#surv-walk}
 
-Using the Survival tool can be split into three major processes: preparing data, looking at data, and uploading data. 
+Using the Survival tool can be split into three major processes: preparing data, reviewing outputs, and uploading data. 
 
 ### Preparing Data {#surv-prep}
 
@@ -22,7 +22,7 @@ The first step is to obtain your data. Click Setup under the Survival dropdown.
 
 <center>![](./www/surv_walk1.png)</center>
 
-You will notice a window at the top left of the page labeled Overview, and this is where you will decide the species and DAU that we will be analyzing. Once you have made your selections, click [<b>Download Data</b>]{style="color: #196eb0;"} at the bottom of the window. 
+You will notice a window at the top left of the page labeled Overview, and this is where you will decide the [<b>species</b>](#gl-species){style="color: #086e04;"} and [<b>DAU</b>](#gl-dau){style="color: #086e04;"} that we will be analyzing. Once you have made your selections, click [<b>Download Data</b>]{style="color: #196eb0;"} at the bottom of the window. 
 
 <center>![](./www/surv_walk2.png)</center>
 
@@ -39,13 +39,13 @@ We will next move on to the Structure window, where we will determine our model 
 
 <center>![](./www/surv_walk6.png)</center>
 
-Once you have made your choices, you can move on to the Run tab. Under the run tab, decide your Thinning Rate, Burnin Length, and MCMC Iterations, then decide whether or not you would like to automate convergence. We have provided a set of defaults that are well suited for a variety of situations, but feel free to modify the values to better fit your situation.
+Once you have made your choices, you can move on to the Run tab. Under the run tab, decide your [<b>Burnin Length</b>](#gl-burnin){style="color: #086e04;"}, [<b>MCMC Iterations</b>](#gl-mcmciter){style="color: #086e04;"}, and [<b>Thinning Rate</b>](#gl-thin){style="color: #086e04;"}, then decide whether or not you would like to [<b>Automate Convergence</b>](#gl-autoconv){style="color: #086e04;"}. We have provided a set of defaults that are well suited for a variety of situations, but feel free to modify the values to better fit your situation.
 
 <center>![](./www/surv_walk7.png)</center>
 
 When you are done, click [<b>Fit Model</b>]{style="color: #196eb0;"} to run the analysis. You will get a dialog box when the process is done.
 
-### Looking at Data {#surv-look}
+### Reviewing Outputs {#surv-look}
 
 Once your model is finished running, you can view the results in the Tables tab. 
 
@@ -57,7 +57,7 @@ Note that the first ten entries that appear when you open this page are only a s
 
 ### Uploading Data {#surv-upload}
 
-If you’re feeling confident about your results, you can add them to an IPM database using the Admin tab, but understand that EDITS YOU MAKE HERE WILL EDIT THE DATABASE FOR EVERYONE, which is why we ask that you’re confident about your results before you add them. 
+If you’re feeling confident about your results, you can add them to an IPM database using the Admin tab, but understand that <b>edits you make here will edit the database for everyone</b>, which is why we ask that you’re confident about your results before you add them. 
 
 <center>![](./www/surv_walk10.png)</center>
 
@@ -69,24 +69,52 @@ The IPM Data window allows you to select which database will receive your data, 
 
 ### Setup {#surv-setup}
 
-  The window on the top left determines how your model is going to be run. The Overview tab is where you select and download the data that you will be modeling for survival by species of animal and DAU that the data was collected in. The only way to preview the data before modeling is to download it, and you will have to redownload if you want to change the species or DAU before you run the model. Data comes from IDFG’s Statewide Animal Monitoring Master (SAMM) and data must be modified at the source within SAMM. PopR only loads the data temporarily using an API, and so cannot modify it. The Subset tab lets you decide which sections of your elk or mule deer population will be included in your output, and over what period of time. The default inputs are Sex:All, Age:A.
+<center>![](./www/surv_setup1.png)</center>
 
-  In the Structure tab, we get to make some decisions about our model. The Default inputs work well for a variety of situations and you should keep them if you plan on putting the results of this model into an IPM dataset. They are: Model Type: Known Fate, Covariates: None, Censor Fate(s): None, Model sexes as: Same, Model time as: Constant, Model space as: Constant. Our options for Model type are known fate and multi state and each has its own strengths and specific use cases (GLOSSARY). You can also select which covariates will be included in your analysis here. Censor fate allows you to remove animals from your analysis who were harvested by hunters. Simply click the Harvest option. Model Sexes can get survival metrics of both males and females separately by setting it to Different. You can model both time and space as both constant and monthly. 
+  The window on the top left determines how your model is going to be run. 
+ 
+ <center>![](./www/surv_setup2.png)</center>
   
-  The Run tab allows us to control the actual process of running our model. Burnin Length helps us focus our model. When the MCMC model begins running, it checks possible outputs of the model and begins sampling them to determine the probability that they will represent our data. The model uses past sampled points to try and get an idea of where the highest probabilities are, but when the model first begins running it does not have the luxury of these reference points. This sets up the model’s first few samples to be more randomly chosen than any part of the process, meaning that the beginning samples are less likely to be on high probability outputs. Burnin Length helps us get around this by deleting the first runs of the MCMC model after it’s done running. MCMC iterations is simply a measure of how many different times the model will test the probability of different model outputs. More sampling allows the model to consider more options and therefore can increase the chance that the model will find the outputs with the highest likelihoods, but it also may not be necessary and will make the tool take longer to run. Thinning rate helps us save memory by deleting entries from the model’s stored runs. We can think of this as a sort of browser history for the model, showing us how it got its answer. In this case there are literally tens of thousands of steps, so deleting a small (or large) proportion of that history and using what is left still gives us an idea of the model’s actions without taking up nearly as much memory. The slider is the percentage of model iterations that will be deleted once the modeling process is complete.
+  The Overview tab is where you select and download the data that you will be modeling for survival by [<b>species</b>](#gl-species){style="color: #086e04;"} of animal and [<b>DAU</b>](#gl-dau){style="color: #086e04;"} that the data was collected in. The only way to preview the data before modeling is to download it, and you will have to redownload if you want to change the species or DAU before you run the model. Data comes from IDFG’s Statewide Animal Monitoring Master (SAMM) and data must be modified at the source within SAMM. PopR only loads the data temporarily using an API, and so cannot modify it. The Subset tab lets you decide which sections of your elk or mule deer population will be included in your output, and over what period of time. The default inputs are Sex:All, Age:A.
+
+  In the Structure tab, we get to make some decisions about our model. The Default inputs work well for a variety of situations and you should keep them if you plan on putting the results of this model into an IPM dataset. They are: Model Type: Known Fate, Covariates: None, Censor Fate(s): None, Model sexes as: Same, Model time as: Constant, Model space as: Constant. Use the known fate model if you know when every animal died in your study, but the multi-state model can make estimates even if you censored animals. You can also select which covariates will be included in your analysis here. Censor fate allows you to remove animals from your analysis who were harvested by hunters. Simply click the Harvest option. Model Sexes can get survival metrics of both males and females separately by setting it to Different. You can model both time and space as both constant and monthly. 
+  
+  The Run tab gives direction to our actual modeling process. The given settings control how we deal with the many thousands of times the model must run to calibrate itself. Adjust your [<b>Burnin Length</b>](#gl-burnin){style="color: #086e04;"}, [<b>MCMC Iterations</b>](#gl-mcmciter){style="color: #086e04;"} and [<b>Thinning Rate</b>](#gl-thin){style="color: #086e04;"}. The bottom of the window gives an option for [<b>Automating Convergence</b>](#gl-autoconv){style="color: #086e04;"} as well. You may adjust any of these factors, but the defaults are appropriate for a wide variety of situations.
   
   Use the window at the top right of the page to check for data issues. The window to the top right is very useful for troubleshooting. The capture tab displays the ID of an animal that that has bad or no XY data in the capture tab at the bottom of the page. The Mortalities tab displays Mortality data whose XY data needs fixing as well. To get a better idea of which points are causing a problem, points can be clicked on the map to get their IDs as well.
   
+  <center>![](./www/surv_setup3.png)</center>
+  
   The window at the bottom of the page works as a preview for data that is gathered by the download data button. All of the tables can be downloaded with the corresponding button, but only data that is displayed to be downloaded, so make sure [<b>Show (10) Entries</b>]{style="color: #196eb0;"} is changed to “All” if you would like to get your entire output in one .csv. All of the tables can be searched using the empty slots at the top of each column. Searching the ID column can be very helpful for finding data that is also displayed in the window that shows entries with damaged xy data. The Raw Data from SAMM, Idaho's database that includes statewide animal monitoring data, is displayed here as well, but as stated above changes to the data will have to be made in SAMM itself.
+  
+  <center>![](./www/surv_setup4.png)</center>
 
 ### Admin {#surv-admin}
 
+<center>![](./www/surv_admin1.png)</center>
+
 The Admin tab is a straightforward page used to upload the results of your model to your database of choice. The bottom window can be used to preview the data that you plan to upload, so make sure you are comfortable with your results before you upload them to the public database. Data you upload will be incorporated into everyone else’s model runs, so be careful.
 
+<center>![](./www/surv_admin2.png)</center>
+
 ### Tables {#surv-tables}
+
+<center>![](./www/surv_tables1.png)</center>
 
 Once your model is finished running, you can view the results in the Tables tab. Note that the first ten entries that appear when you open this page are only a small fraction of the total. Use the page list on the bottom right to see more pages of data or use the dropdown menu on the top left to make more entries appear on each page.
 
 ### Individuals {#surv-indiv}
 
-If the window in the setup tab shows that there may be problems with XY data in capture and mortalities, this is the place to go. After selecting your individual of interest at the top of the page, the bottom two windows show all data available. Raw data from SAMM, Idaho's statewide database, is on the left and data formatted by speedgoat for our model is on the right. There are many columns, so make sure to scroll horizontally to make sure you see them all. The empty text box at the top of each column allows you to do a search.
+<center>![](./www/surv_indiv1.png)</center>
+
+If the window in the setup tab shows that there may be problems with XY data in capture and mortalities, this is the place to go. After selecting your individual of interest at the top of the page, the bottom two windows show all data available about that particular animal.
+
+<center>![](./www/surv_indiv2.png)</center>
+
+Raw data from SAMM, Idaho's statewide database, is on the left. The two tabs in this window are Raw and Raw minimized, which removes some of the columns from the Raw tab to make it easier to navigate. The empty box at the top of each column is a keyword search.
+
+<center>![](./www/surv_indiv3.png)</center>
+
+Data formatted by speedgoat for our model is on the right. There are many columns, so make sure to scroll horizontally to make sure you see them all. The empty text box at the top of each column allows you to do a keyword search.
+
+<center>![](./www/surv_indiv4.png)</center>
