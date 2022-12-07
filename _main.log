@@ -1,14 +1,26 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2022.7.11)  11 JUL 2022 12:38
+<<<<<<< HEAD
+This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2022.11.11)  11 NOV 2022 00:38
+=======
+This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2022.7.13)  13 JUL 2022 16:48
+>>>>>>> aabdfa1e5b586951fbb44f29b4bdf85335c2552a
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **_main.tex
 (./_main.tex
+<<<<<<< HEAD
+LaTeX2e <2022-11-01>
+L3 programming layer <2022-11-02> (/home/wyatt/.TinyTeX/texmf-dist/tex/latex/base/book.cls
+Document Class: book 2022/07/02 v1.4n Standard LaTeX document class
+(/home/wyatt/.TinyTeX/texmf-dist/tex/latex/base/bk10.clo
+File: bk10.clo 2022/07/02 v1.4n Standard LaTeX file (size option)
+=======
 LaTeX2e <2022-06-01> patch level 5
-L3 programming layer <2022-07-04> (c:/Users/HansMartin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/book.cls
+L3 programming layer <2022-07-04> (/home/wyatt/.TinyTeX/texmf-dist/tex/latex/base/book.cls
 Document Class: book 2021/10/04 v1.4n Standard LaTeX document class
-(c:/Users/HansMartin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/bk10.clo
+(/home/wyatt/.TinyTeX/texmf-dist/tex/latex/base/bk10.clo
 File: bk10.clo 2021/10/04 v1.4n Standard LaTeX file (size option)
+>>>>>>> aabdfa1e5b586951fbb44f29b4bdf85335c2552a
 )
 \c@part=\count181
 \c@chapter=\count182
@@ -21,21 +33,32 @@ File: bk10.clo 2021/10/04 v1.4n Standard LaTeX file (size option)
 \c@table=\count189
 \abovecaptionskip=\skip47
 \belowcaptionskip=\skip48
+<<<<<<< HEAD
+\bibindent=\dimen140
+=======
 \bibindent=\dimen138
-) (c:/Users/HansMartin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsmath/amsmath.sty
+>>>>>>> aabdfa1e5b586951fbb44f29b4bdf85335c2552a
+) (/home/wyatt/.TinyTeX/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2022/04/08 v2.17n AMS math features
 \@mathmargin=\skip49
 For additional information on amsmath, use the `?' option.
-(c:/Users/HansMartin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsmath/amstext.sty
+(/home/wyatt/.TinyTeX/texmf-dist/tex/latex/amsmath/amstext.sty
 Package: amstext 2021/08/26 v2.01 AMS text
-(c:/Users/HansMartin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsmath/amsgen.sty
+(/home/wyatt/.TinyTeX/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
 \@emptytoks=\toks16
+<<<<<<< HEAD
+\ex@=\dimen141
+)) (/home/wyatt/.TinyTeX/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen142
+=======
 \ex@=\dimen139
-)) (c:/Users/HansMartin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsmath/amsbsy.sty
+)) (/home/wyatt/.TinyTeX/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
 \pmbraise@=\dimen140
-) (c:/Users/HansMartin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsmath/amsopn.sty
+>>>>>>> aabdfa1e5b586951fbb44f29b4bdf85335c2552a
+) (/home/wyatt/.TinyTeX/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2022/04/08 v2.04 operator names
 )
 \inf@bad=\count190
@@ -55,7 +78,7 @@ LaTeX Info: Redefining \big on input line 722.
 LaTeX Info: Redefining \Big on input line 723.
 LaTeX Info: Redefining \bigg on input line 724.
 LaTeX Info: Redefining \Bigg on input line 725.
-\big@size=\dimen141
+\big@size=\dimen143
 LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
 \macc@depth=\count195
@@ -73,28 +96,28 @@ LaTeX Info: Redefining \Relbar on input line 971.
 \column@=\count266
 \maxfields@=\count267
 \andhelp@=\toks18
-\eqnshift@=\dimen142
-\alignsep@=\dimen143
-\tagshift@=\dimen144
-\tagwidth@=\dimen145
-\totwidth@=\dimen146
-\lineht@=\dimen147
+\eqnshift@=\dimen144
+\alignsep@=\dimen145
+\tagshift@=\dimen146
+\tagwidth@=\dimen147
+\totwidth@=\dimen148
+\lineht@=\dimen149
 \@envbody=\toks19
 \multlinegap=\skip50
 \multlinetaggap=\skip51
 \mathdisplay@stack=\toks20
 LaTeX Info: Redefining \[ on input line 2953.
 LaTeX Info: Redefining \] on input line 2954.
-) (c:/Users/HansMartin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/amssymb.sty
+) (/home/wyatt/.TinyTeX/texmf-dist/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
-(c:/Users/HansMartin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+(/home/wyatt/.TinyTeX/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
 LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
-)) (c:/Users/HansMartin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/lmodern.sty
+)) (/home/wyatt/.TinyTeX/texmf-dist/tex/latex/lm/lmodern.sty
 Package: lmodern 2015/05/01 v1.6.1 Latin Modern Fonts
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  OT1/cmr/m/n --> OT1/lmr/m/n on input line 22.
@@ -128,12 +151,25 @@ LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
 (Font)                  OT1/cmr/bx/it --> OT1/lmr/bx/it on input line 37.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 (Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 38.
-) (c:/Users/HansMartin/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/iftex/iftex.sty
+<<<<<<< HEAD
+) (/home/wyatt/.TinyTeX/texmf-dist/tex/generic/iftex/iftex.sty
 Package: iftex 2022/02/03 v1.0f TeX engine tests
-) (c:/Users/HansMartin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/unicode-math/unicode-math.sty (c:/Users/HansMartin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3kernel/expl3.sty
+) (/home/wyatt/.TinyTeX/texmf-dist/tex/latex/unicode-math/unicode-math.sty (/home/wyatt/.TinyTeX/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2022-11-02 L3 programming layer (loader) 
+(/home/wyatt/.TinyTeX/texmf-dist/tex/latex/l3backend/l3backend-xetex.def
+File: l3backend-xetex.def 2022-10-26 L3 backend support: XeTeX
+=======
+) (/home/wyatt/.TinyTeX/texmf-dist/tex/generic/iftex/ifxetex.sty
+Package: ifxetex 2019/10/25 v0.7 ifxetex legacy package. Use iftex instead.
+(/home/wyatt/.TinyTeX/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2022/02/03 v1.0f TeX engine tests
+)) (/home/wyatt/.TinyTeX/texmf-dist/tex/generic/iftex/ifluatex.sty
+Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
+) (/home/wyatt/.TinyTeX/texmf-dist/tex/latex/unicode-math/unicode-math.sty (/home/wyatt/.TinyTeX/texmf-dist/tex/latex/l3kernel/expl3.sty
 Package: expl3 2022-07-04 L3 programming layer (loader) 
-(c:/Users/HansMartin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3backend/l3backend-xetex.def
+(/home/wyatt/.TinyTeX/texmf-dist/tex/latex/l3backend/l3backend-xetex.def
 File: l3backend-xetex.def 2022-07-01 L3 backend support: XeTeX
+>>>>>>> aabdfa1e5b586951fbb44f29b4bdf85335c2552a
 \g__graphics_track_int=\count268
 \l__pdf_internal_box=\box53
 \g__pdf_backend_object_int=\count269
@@ -141,15 +177,15 @@ File: l3backend-xetex.def 2022-07-01 L3 backend support: XeTeX
 \g__pdf_backend_link_int=\count271
 ))
 Package: unicode-math 2020/01/31 v0.8q Unicode maths in XeLaTeX and LuaLaTeX
-(c:/Users/HansMartin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/unicode-math/unicode-math-xetex.sty
+(/home/wyatt/.TinyTeX/texmf-dist/tex/latex/unicode-math/unicode-math-xetex.sty
 Package: unicode-math-xetex 2020/01/31 v0.8q Unicode maths in XeLaTeX and LuaLaTeX
-(c:/Users/HansMartin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+(/home/wyatt/.TinyTeX/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
 Package: xparse 2022-06-22 L3 Experimental document command parser
-) (c:/Users/HansMartin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
+) (/home/wyatt/.TinyTeX/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
 Package: l3keys2e 2022-06-22 LaTeX2e option processing using LaTeX3 keys
-) (c:/Users/HansMartin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/fontspec/fontspec.sty
+) (/home/wyatt/.TinyTeX/texmf-dist/tex/latex/fontspec/fontspec.sty
 Package: fontspec 2022/01/15 v2.8a Font selection for XeLaTeX and LuaLaTeX
-(c:/Users/HansMartin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/fontspec/fontspec-xetex.sty
+(/home/wyatt/.TinyTeX/texmf-dist/tex/latex/fontspec/fontspec-xetex.sty
 Package: fontspec-xetex 2022/01/15 v2.8a Font selection for XeLaTeX and LuaLaTeX
 \l__fontspec_script_int=\count272
 \l__fontspec_language_int=\count273
@@ -162,14 +198,20 @@ Package: fontspec-xetex 2022/01/15 v2.8a Font selection for XeLaTeX and LuaLaTeX
 \l__fontspec_emdef_int=\count280
 \l__fontspec_strong_int=\count281
 \l__fontspec_strongdef_int=\count282
+<<<<<<< HEAD
+\l__fontspec_tmpa_dim=\dimen150
+\l__fontspec_tmpb_dim=\dimen151
+\l__fontspec_tmpc_dim=\dimen152
+=======
 \l__fontspec_tmpa_dim=\dimen148
 \l__fontspec_tmpb_dim=\dimen149
 \l__fontspec_tmpc_dim=\dimen150
-(c:/Users/HansMartin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/fontenc.sty
+>>>>>>> aabdfa1e5b586951fbb44f29b4bdf85335c2552a
+(/home/wyatt/.TinyTeX/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
-) (c:/Users/HansMartin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/fontspec/fontspec.cfg))) (c:/Users/HansMartin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/fix-cm.sty
+) (/home/wyatt/.TinyTeX/texmf-dist/tex/latex/fontspec/fontspec.cfg))) (/home/wyatt/.TinyTeX/texmf-dist/tex/latex/base/fix-cm.sty
 Package: fix-cm 2020/11/24 v1.1t fixes to LaTeX
-(c:/Users/HansMartin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/ts1enc.def
+(/home/wyatt/.TinyTeX/texmf-dist/tex/latex/base/ts1enc.def
 File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding TS1 on input line 47.
 ))
@@ -177,15 +219,19 @@ LaTeX Font Info:    Redeclaring font encoding TS1 on input line 47.
 \g__um_fonts_used_int=\count284
 \l__um_primecount_int=\count285
 \g__um_primekern_muskip=\muskip17
-(c:/Users/HansMartin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/unicode-math/unicode-math-table.tex))) (c:/Users/HansMartin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/xcolor/xcolor.sty
+(/home/wyatt/.TinyTeX/texmf-dist/tex/latex/unicode-math/unicode-math-table.tex))) (/home/wyatt/.TinyTeX/texmf-dist/tex/latex/xcolor/xcolor.sty
 Package: xcolor 2022/06/12 v2.14 LaTeX color extensions (UK)
-(c:/Users/HansMartin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics-cfg/color.cfg
+(/home/wyatt/.TinyTeX/texmf-dist/tex/latex/graphics-cfg/color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: xetex.def on input line 227.
-(c:/Users/HansMartin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics-def/xetex.def
+(/home/wyatt/.TinyTeX/texmf-dist/tex/latex/graphics-def/xetex.def
+<<<<<<< HEAD
+File: xetex.def 2022/09/22 v5.0n Graphics/color driver for xetex
+=======
 File: xetex.def 2022/04/16 v5.0m Graphics/color driver for xetex
-) (c:/Users/HansMartin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/mathcolor.ltx)
+>>>>>>> aabdfa1e5b586951fbb44f29b4bdf85335c2552a
+) (/home/wyatt/.TinyTeX/texmf-dist/tex/latex/graphics/mathcolor.ltx)
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1353.
 Package xcolor Info: Model `RGB' extended on input line 1369.
 Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1371.
@@ -194,57 +240,162 @@ Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1373.
 Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1374.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1375.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1376.
-) (c:/Users/HansMartin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/hyperref.sty
+<<<<<<< HEAD
+) (/home/wyatt/.TinyTeX/texmf-dist/tex/latex/tools/longtable.sty
+Package: longtable 2021-09-01 v4.17 Multi-page Table package (DPC)
+\LTleft=\skip52
+\LTright=\skip53
+\LTpre=\skip54
+\LTpost=\skip55
+\LTchunksize=\count286
+\LTcapwidth=\dimen153
+\LT@head=\box54
+\LT@firsthead=\box55
+\LT@foot=\box56
+\LT@lastfoot=\box57
+\LT@gbox=\box58
+\LT@cols=\count287
+\LT@rows=\count288
+\c@LT@tables=\count289
+\c@LT@chunks=\count290
+\LT@p@ftn=\toks21
+) (/home/wyatt/.TinyTeX/texmf-dist/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen154
+\lightrulewidth=\dimen155
+\cmidrulewidth=\dimen156
+\belowrulesep=\dimen157
+\belowbottomsep=\dimen158
+\aboverulesep=\dimen159
+\abovetopsep=\dimen160
+\cmidrulesep=\dimen161
+\cmidrulekern=\dimen162
+\defaultaddspace=\dimen163
+\@cmidla=\count291
+\@cmidlb=\count292
+\@aboverulesep=\dimen164
+\@belowrulesep=\dimen165
+\@thisruleclass=\count293
+\@lastruleclass=\count294
+\@thisrulewidth=\dimen166
+) (/home/wyatt/.TinyTeX/texmf-dist/tex/latex/tools/array.sty
+Package: array 2022/09/04 v2.5g Tabular extension package (FMi)
+\col@sep=\dimen167
+\ar@mcellbox=\box59
+\extrarowheight=\dimen168
+\NC@list=\toks22
+\extratabsurround=\skip56
+\backup@length=\skip57
+\ar@cellbox=\box60
+) (/home/wyatt/.TinyTeX/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count295
+\calc@Bcount=\count296
+\calc@Adimen=\dimen169
+\calc@Bdimen=\dimen170
+\calc@Askip=\skip58
+\calc@Bskip=\skip59
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count297
+\calc@Cskip=\skip60
+) (/home/wyatt/.TinyTeX/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count298
+) (/home/wyatt/.TinyTeX/texmf-dist/tex/latex/mdwtools/footnote.sty
+Package: footnote 1997/01/28 1.13 Save footnotes around boxes
+\fn@notes=\box61
+\fn@width=\dimen171
+) (/home/wyatt/.TinyTeX/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+(/home/wyatt/.TinyTeX/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks23
+) (/home/wyatt/.TinyTeX/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
+(/home/wyatt/.TinyTeX/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
+) (/home/wyatt/.TinyTeX/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: xetex.def on input line 107.
+)
+\Gin@req@height=\dimen172
+\Gin@req@width=\dimen173
+) (/home/wyatt/.TinyTeX/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2022-09-22 v7.00t Hypertext links for LaTeX
+=======
+) (/home/wyatt/.TinyTeX/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2022-06-20 v7.00s Hypertext links for LaTeX
-(c:/Users/HansMartin/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+>>>>>>> aabdfa1e5b586951fbb44f29b4bdf85335c2552a
+(/home/wyatt/.TinyTeX/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
 Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
-) (c:/Users/HansMartin/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+) (/home/wyatt/.TinyTeX/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
 Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO)
-(c:/Users/HansMartin/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+(/home/wyatt/.TinyTeX/texmf-dist/tex/generic/infwarerr/infwarerr.sty
 Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
 )
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode not found.
-) (c:/Users/HansMartin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/keyval.sty
+<<<<<<< HEAD
+) (/home/wyatt/.TinyTeX/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty
+Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
+=======
+) (/home/wyatt/.TinyTeX/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
 \KV@toks@=\toks21
-) (c:/Users/HansMartin/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty
+) (/home/wyatt/.TinyTeX/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty
 Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
-) (c:/Users/HansMartin/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
+>>>>>>> aabdfa1e5b586951fbb44f29b4bdf85335c2552a
+) (/home/wyatt/.TinyTeX/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
 Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
-) (c:/Users/HansMartin/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+) (/home/wyatt/.TinyTeX/texmf-dist/tex/generic/pdfescape/pdfescape.sty
 Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
-) (c:/Users/HansMartin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hycolor/hycolor.sty
+) (/home/wyatt/.TinyTeX/texmf-dist/tex/latex/hycolor/hycolor.sty
 Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
-) (c:/Users/HansMartin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty
+) (/home/wyatt/.TinyTeX/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty
 Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
-) (c:/Users/HansMartin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/auxhook/auxhook.sty
+) (/home/wyatt/.TinyTeX/texmf-dist/tex/latex/auxhook/auxhook.sty
 Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
-) (c:/Users/HansMartin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/nameref.sty
+) (/home/wyatt/.TinyTeX/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2022-05-17 v2.50 Cross-referencing by name of section
-(c:/Users/HansMartin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/refcount/refcount.sty
+(/home/wyatt/.TinyTeX/texmf-dist/tex/latex/refcount/refcount.sty
 Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
-) (c:/Users/HansMartin/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
+) (/home/wyatt/.TinyTeX/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
-(c:/Users/HansMartin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+(/home/wyatt/.TinyTeX/texmf-dist/tex/latex/kvoptions/kvoptions.sty
 Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
 ))
-\c@section@level=\count286
+\c@section@level=\count299
 )
+<<<<<<< HEAD
+\@linkdim=\dimen174
+\Hy@linkcounter=\count300
+\Hy@pagecounter=\count301
+(/home/wyatt/.TinyTeX/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2022-09-22 v7.00t Hyperref: PDFDocEncoding definition (HO)
+=======
 \@linkdim=\dimen151
 \Hy@linkcounter=\count287
 \Hy@pagecounter=\count288
-(c:/Users/HansMartin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/pd1enc.def
+(/home/wyatt/.TinyTeX/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2022-06-20 v7.00s Hyperref: PDFDocEncoding definition (HO)
-) (c:/Users/HansMartin/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/intcalc/intcalc.sty
+>>>>>>> aabdfa1e5b586951fbb44f29b4bdf85335c2552a
+) (/home/wyatt/.TinyTeX/texmf-dist/tex/generic/intcalc/intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
-) (c:/Users/HansMartin/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/etexcmds/etexcmds.sty
+) (/home/wyatt/.TinyTeX/texmf-dist/tex/generic/etexcmds/etexcmds.sty
 Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
 )
+<<<<<<< HEAD
+\Hy@SavedSpaceFactor=\count302
+(/home/wyatt/.TinyTeX/texmf-dist/tex/latex/hyperref/puenc.def
+File: puenc.def 2022-09-22 v7.00t Hyperref: PDF Unicode definition (HO)
+=======
 \Hy@SavedSpaceFactor=\count289
-(c:/Users/HansMartin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/puenc.def
+(/home/wyatt/.TinyTeX/texmf-dist/tex/latex/hyperref/puenc.def
 File: puenc.def 2022-06-20 v7.00s Hyperref: PDF Unicode definition (HO)
+>>>>>>> aabdfa1e5b586951fbb44f29b4bdf85335c2552a
 )
 Package hyperref Info: Option `unicode' set `true' on input line 4045.
 Package hyperref Info: Hyper figures OFF on input line 4162.
@@ -253,19 +404,41 @@ Package hyperref Info: Hyper index ON on input line 4170.
 Package hyperref Info: Plain pages OFF on input line 4177.
 Package hyperref Info: Backreferencing OFF on input line 4182.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+<<<<<<< HEAD
+Package hyperref Info: Bookmarks ON on input line 4410.
+\c@Hy@tempcnt=\count303
+=======
 Package hyperref Info: Bookmarks ON on input line 4408.
 \c@Hy@tempcnt=\count290
-(c:/Users/HansMartin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/url/url.sty
+>>>>>>> aabdfa1e5b586951fbb44f29b4bdf85335c2552a
+(/home/wyatt/.TinyTeX/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip18
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
+<<<<<<< HEAD
+LaTeX Info: Redefining \url on input line 4748.
+\XeTeXLinkMargin=\dimen175
+=======
 LaTeX Info: Redefining \url on input line 4746.
 \XeTeXLinkMargin=\dimen152
-(c:/Users/HansMartin/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/bitset/bitset.sty
+>>>>>>> aabdfa1e5b586951fbb44f29b4bdf85335c2552a
+(/home/wyatt/.TinyTeX/texmf-dist/tex/generic/bitset/bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
-(c:/Users/HansMartin/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
+(/home/wyatt/.TinyTeX/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO)
 ))
+<<<<<<< HEAD
+\Fld@menulength=\count304
+\Field@Width=\dimen176
+\Fld@charsize=\dimen177
+Package hyperref Info: Hyper figures OFF on input line 6027.
+Package hyperref Info: Link nesting OFF on input line 6032.
+Package hyperref Info: Hyper index ON on input line 6035.
+Package hyperref Info: backreferencing OFF on input line 6042.
+Package hyperref Info: Link coloring OFF on input line 6047.
+Package hyperref Info: Link coloring with OCG OFF on input line 6052.
+Package hyperref Info: PDF/A mode OFF on input line 6057.
+=======
 \Fld@menulength=\count291
 \Field@Width=\dimen153
 \Fld@charsize=\dimen154
@@ -276,18 +449,30 @@ Package hyperref Info: backreferencing OFF on input line 6039.
 Package hyperref Info: Link coloring OFF on input line 6044.
 Package hyperref Info: Link coloring with OCG OFF on input line 6049.
 Package hyperref Info: PDF/A mode OFF on input line 6054.
-(c:/Users/HansMartin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/atbegshi-ltx.sty
+>>>>>>> aabdfa1e5b586951fbb44f29b4bdf85335c2552a
+(/home/wyatt/.TinyTeX/texmf-dist/tex/latex/base/atbegshi-ltx.sty
 Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
 package with kernel methods
 )
-\Hy@abspage=\count292
-\c@Item=\count293
-\c@Hfootnote=\count294
+\Hy@abspage=\count305
+\c@Item=\count306
+\c@Hfootnote=\count307
 )
 Package hyperref Info: Driver (autodetected): hxetex.
-(c:/Users/HansMartin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/hxetex.def
+(/home/wyatt/.TinyTeX/texmf-dist/tex/latex/hyperref/hxetex.def
+<<<<<<< HEAD
+File: hxetex.def 2022-09-22 v7.00t Hyperref driver for XeTeX
+(/home/wyatt/.TinyTeX/texmf-dist/tex/generic/stringenc/stringenc.sty
+Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO)
+)
+\pdfm@box=\box62
+\c@Hy@AnnotLevel=\count308
+\HyField@AnnotCount=\count309
+\Fld@listcount=\count310
+\c@bookmark@seq@number=\count311
+=======
 File: hxetex.def 2022-06-20 v7.00s Hyperref driver for XeTeX
-(c:/Users/HansMartin/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/stringenc/stringenc.sty
+(/home/wyatt/.TinyTeX/texmf-dist/tex/generic/stringenc/stringenc.sty
 Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO)
 )
 \pdfm@box=\box54
@@ -295,18 +480,22 @@ Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO)
 \HyField@AnnotCount=\count296
 \Fld@listcount=\count297
 \c@bookmark@seq@number=\count298
-(c:/Users/HansMartin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+>>>>>>> aabdfa1e5b586951fbb44f29b4bdf85335c2552a
+(/home/wyatt/.TinyTeX/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
 Package: rerunfilecheck 2022-07-10 v1.10 Rerun checks for auxiliary files (HO)
-(c:/Users/HansMartin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/atveryend-ltx.sty
+(/home/wyatt/.TinyTeX/texmf-dist/tex/latex/base/atveryend-ltx.sty
 Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend package
 with kernel methods
-) (c:/Users/HansMartin/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
+) (/home/wyatt/.TinyTeX/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
 Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 )
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 285.
 )
+<<<<<<< HEAD
+\Hy@SectionHShift=\skip61
+=======
 \Hy@SectionHShift=\skip52
-) (c:/Users/HansMartin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tools/longtable.sty
+) (/home/wyatt/.TinyTeX/texmf-dist/tex/latex/tools/longtable.sty
 Package: longtable 2021-09-01 v4.17 Multi-page Table package (DPC)
 \LTleft=\skip53
 \LTright=\skip54
@@ -324,7 +513,7 @@ Package: longtable 2021-09-01 v4.17 Multi-page Table package (DPC)
 \c@LT@tables=\count302
 \c@LT@chunks=\count303
 \LT@p@ftn=\toks22
-) (c:/Users/HansMartin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/booktabs/booktabs.sty
+) (/home/wyatt/.TinyTeX/texmf-dist/tex/latex/booktabs/booktabs.sty
 Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 \heavyrulewidth=\dimen156
 \lightrulewidth=\dimen157
@@ -343,7 +532,7 @@ Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
 \@thisruleclass=\count306
 \@lastruleclass=\count307
 \@thisrulewidth=\dimen168
-) (c:/Users/HansMartin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tools/array.sty
+) (/home/wyatt/.TinyTeX/texmf-dist/tex/latex/tools/array.sty
 Package: array 2022/03/10 v2.5f Tabular extension package (FMi)
 \col@sep=\dimen169
 \ar@mcellbox=\box60
@@ -352,7 +541,7 @@ Package: array 2022/03/10 v2.5f Tabular extension package (FMi)
 \extratabsurround=\skip57
 \backup@length=\skip58
 \ar@cellbox=\box61
-) (c:/Users/HansMartin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tools/calc.sty
+) (/home/wyatt/.TinyTeX/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
 \calc@Acount=\count308
 \calc@Bcount=\count309
@@ -364,27 +553,26 @@ LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
 \calc@Ccount=\count310
 \calc@Cskip=\skip61
-) (c:/Users/HansMartin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+) (/home/wyatt/.TinyTeX/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
 \etb@tempcnta=\count311
-) (c:/Users/HansMartin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/mdwtools/footnote.sty
+) (/home/wyatt/.TinyTeX/texmf-dist/tex/latex/mdwtools/footnote.sty
 Package: footnote 1997/01/28 1.13 Save footnotes around boxes
 \fn@notes=\box62
 \fn@width=\dimen173
-) (c:/Users/HansMartin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/graphicx.sty
+) (/home/wyatt/.TinyTeX/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
-(c:/Users/HansMartin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/graphics.sty
+(/home/wyatt/.TinyTeX/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
-(c:/Users/HansMartin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/trig.sty
+(/home/wyatt/.TinyTeX/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
-) (c:/Users/HansMartin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+) (/home/wyatt/.TinyTeX/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: xetex.def on input line 107.
+>>>>>>> aabdfa1e5b586951fbb44f29b4bdf85335c2552a
 )
-\Gin@req@height=\dimen174
-\Gin@req@width=\dimen175
-) (./_main.aux)
+No file _main.aux.
 \openout1 = `_main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 79.
@@ -640,9 +828,11 @@ LaTeX Font Info:    Encoding `OMX' has changed to `TU' for symbol font
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
 (Font)                  OMX/lmex/m/n --> TU/latinmodern-math.otf(3)/b/n on input line 79.
 Package hyperref Info: Link coloring OFF on input line 79.
-(./_main.out) (./_main.out)
 \@outlinefile=\write3
 \openout3 = `_main.out'.
+
+
+Package hyperref Warning: Rerun to get /PageLabels entry.
 
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
 (Font)              scaled to size 12.0pt on input line 81.
@@ -651,7 +841,7 @@ LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
 (Font)              scaled to size 6.0pt on input line 81.
 LaTeX Font Info:    Trying to load font information for OML+lmm on input line 81.
-(c:/Users/HansMartin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/omllmm.fd
+(/home/wyatt/.TinyTeX/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
@@ -667,291 +857,49 @@ LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
 (Font)              scaled to size 5.99936pt on input line 81.
 LaTeX Font Info:    Trying to load font information for U+msa on input line 81.
-(c:/Users/HansMartin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/umsa.fd
+(/home/wyatt/.TinyTeX/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
 LaTeX Font Info:    Trying to load font information for U+msb on input line 81.
-(c:/Users/HansMartin/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/umsb.fd
+(/home/wyatt/.TinyTeX/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
 
 ] [2
 
-] (./_main.toc
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 7.0pt on input line 3.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 5.0pt on input line 3.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 10.00092pt on input line 3.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 7.00064pt on input line 3.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 5.00046pt on input line 3.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 9.99893pt on input line 3.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 6.99925pt on input line 3.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 4.99947pt on input line 3.
-[3])
+]
+No file _main.toc.
 \tf@toc=\write4
 \openout4 = `_main.toc'.
 
-[4]
+[3] [4
+
+]
 Chapter 1.
-File: ./www/spdgt_logo.png Graphic file (type bmp)
-<./www/spdgt_logo.png>
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+LaTeX Warning: File `./www/spdgt_logo.png' not found on input line 103.
 
-[5
-
-] [6]
-Chapter 2.
-[7
-
-]
-File: ./www/dataentry_01.PNG Graphic file (type bmp)
-<./www/dataentry_01.PNG>
-[8]
-File: ./www/dataentry_02.PNG Graphic file (type bmp)
-<./www/dataentry_02.PNG>
-File: ./www/dataentry_03.PNG Graphic file (type bmp)
-<./www/dataentry_03.PNG>
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[9]
-File: ./www/dataentry_04.PNG Graphic file (type bmp)
-<./www/dataentry_04.PNG>
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[10]
-File: ./www/dataentry_05.PNG Graphic file (type bmp)
-<./www/dataentry_05.PNG>
-File: ./www/dataentry_06.PNG Graphic file (type bmp)
-<./www/dataentry_06.PNG>
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[11]
-File: ./www/dataentry_07.PNG Graphic file (type bmp)
-<./www/dataentry_07.PNG>
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[12]
-File: ./www/dataentry_08.PNG Graphic file (type bmp)
-<./www/dataentry_08.PNG>
-
-Overfull \hbox (124.95122pt too wide) has occurred while \output is active
-\TU/lmr/m/sl/10 2.3.  DATA ENTRY MULE DEER COMPOSITION, MULE DEER ABUNDANCE, AND ELK SURVEYS \TU/lmr/m/n/10 13
- []
-
-[13]
-File: ./www/dataentry_01.PNG Graphic file (type bmp)
-<./www/dataentry_01.PNG>
-File: ./www/dataentry_09.PNG Graphic file (type bmp)
-<./www/dataentry_09.PNG>
-[14]
-File: ./www/dataentry_10.PNG Graphic file (type bmp)
-<./www/dataentry_10.PNG>
-File: ./www/dataentry_11.PNG Graphic file (type bmp)
-<./www/dataentry_11.PNG>
-
-Underfull \vbox (badness 5274) has occurred while \output is active []
-
-[15]
-File: ./www/dataentry_13.PNG Graphic file (type bmp)
-<./www/dataentry_13.PNG>
-File: ./www/dataentry_12.PNG Graphic file (type bmp)
-<./www/dataentry_12.PNG>
-[16]
-File: ./www/dataentry_14.PNG Graphic file (type bmp)
-<./www/dataentry_14.PNG>
-File: ./www/dataentry_15.PNG Graphic file (type bmp)
-<./www/dataentry_15.PNG>
-[17] [18
-
-]
-Chapter 3.
-[19] [20] [21] [22] [23]
-Underfull \vbox (badness 1571) has occurred while \output is active []
-
-[24] [25]
-File: ./www/sight_01.PNG Graphic file (type bmp)
-<./www/sight_01.PNG>
-File: ./www/sight_02.PNG Graphic file (type bmp)
-<./www/sight_02.PNG>
-[26]
-File: ./www/sight_03.PNG Graphic file (type bmp)
-<./www/sight_03.PNG>
-File: ./www/sight_04.PNG Graphic file (type bmp)
-<./www/sight_04.PNG>
-
-Underfull \vbox (badness 1152) has occurred while \output is active []
-
-[27]
-File: ./www/sight_05.PNG Graphic file (type bmp)
-<./www/sight_05.PNG>
-File: ./www/sight_06.PNG Graphic file (type bmp)
-<./www/sight_06.PNG>
-
-Underfull \vbox (badness 5802) has occurred while \output is active []
-
-[28]
-File: ./www/sight_07.PNG Graphic file (type bmp)
-<./www/sight_07.PNG>
-File: ./www/sight_08.PNG Graphic file (type bmp)
-<./www/sight_08.PNG>
-[29]
-File: ./www/sight_09.PNG Graphic file (type bmp)
-<./www/sight_09.PNG>
-File: ./www/sight_15.PNG Graphic file (type bmp)
-<./www/sight_15.PNG>
-
-Underfull \vbox (badness 2698) has occurred while \output is active []
-
-[30] [31] [32
-
-]
-Chapter 4.
-Missing character: There is no ⅓ (U+2153) in font [lmroman10-regular]:mapping=tex-text;!
-Missing character: There is no ⅔ (U+2154) in font [lmroman10-regular]:mapping=tex-text;!
-[33]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[34] [35] [36]
-File: ./www/surv_01.PNG Graphic file (type bmp)
-<./www/surv_01.PNG>
-[37]
-File: ./www/surv_02.PNG Graphic file (type bmp)
-<./www/surv_02.PNG>
-File: ./www/surv_04.PNG Graphic file (type bmp)
-<./www/surv_04.PNG>
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[38]
-File: ./www/surv_05.PNG Graphic file (type bmp)
-<./www/surv_05.PNG>
-File: ./www/surv_06.PNG Graphic file (type bmp)
-<./www/surv_06.PNG>
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[39]
-File: ./www/surv_07.PNG Graphic file (type bmp)
-<./www/surv_07.PNG>
-File: ./www/surv_08.PNG Graphic file (type bmp)
-<./www/surv_08.PNG>
-
-Underfull \vbox (badness 4084) has occurred while \output is active []
-
-[40]
-File: ./www/surv_10.PNG Graphic file (type bmp)
-<./www/surv_10.PNG>
-File: ./www/surv_12.PNG Graphic file (type bmp)
-<./www/surv_12.PNG>
-
-Underfull \vbox (badness 2005) has occurred while \output is active []
-
-[41] [42]
-Chapter 5.
-File: ./www/ipm_flowchart.PNG Graphic file (type bmp)
-<./www/ipm_flowchart.PNG>
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[43
-
-] [44] [45]
-Missing character: There is no λ (U+03BB) in font [lmroman10-regular]:mapping=tex-text;!
-[46]
-File: ./www/ipm_01.PNG Graphic file (type bmp)
-<./www/ipm_01.PNG>
-[47]
-File: ./www/ipm_02.PNG Graphic file (type bmp)
-<./www/ipm_02.PNG>
-File: ./www/ipm_03.PNG Graphic file (type bmp)
-<./www/ipm_03.PNG>
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[48]
-File: ./www/ipm_04.PNG Graphic file (type bmp)
-<./www/ipm_04.PNG>
-File: ./www/ipm_06.PNG Graphic file (type bmp)
-<./www/ipm_06.PNG>
-[49]
-File: ./www/ipm_07.PNG Graphic file (type bmp)
-<./www/ipm_07.PNG>
-File: ./www/ipm_08.PNG Graphic file (type bmp)
-<./www/ipm_08.PNG>
-
-Underfull \vbox (badness 2409) has occurred while \output is active []
-
-[50]
-File: ./www/ipm_09.PNG Graphic file (type bmp)
-<./www/ipm_09.PNG>
-File: ./www/ipm_11.PNG Graphic file (type bmp)
-<./www/ipm_11.PNG>
-
-Underfull \vbox (badness 2635) has occurred while \output is active []
-
-[51]
-File: ./www/ipm_12.PNG Graphic file (type bmp)
-<./www/ipm_12.PNG>
-File: ./www/ipm_13.PNG Graphic file (type bmp)
-<./www/ipm_13.PNG>
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[52]
-File: ./www/ipm_14.PNG Graphic file (type bmp)
-<./www/ipm_14.PNG>
-File: ./www/ipm_15.PNG Graphic file (type bmp)
-<./www/ipm_15.PNG>
-
-Underfull \vbox (badness 2486) has occurred while \output is active []
-
-[53]
-File: ./www/ipm_16.PNG Graphic file (type bmp)
-<./www/ipm_16.PNG>
-File: ./www/ipm_18.PNG Graphic file (type bmp)
-<./www/ipm_18.PNG>
-
-Underfull \vbox (badness 5147) has occurred while \output is active []
-
-[54]
-File: ./www/ipm_20.PNG Graphic file (type bmp)
-<./www/ipm_20.PNG>
-[55] [56
-
-]
-Chapter 6.
-[57] [58] [59]
-Overfull \hbox (29.04004pt too wide) in paragraph at lines 1209--1210
- []\TU/lmr/bx/n/10 Vegetation \TU/lmr/m/n/10 There are 5 vegetation class categories including grass/open/agriculture,
- []
-
-[60] [61] [62] (./_main.aux)
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-Package rerunfilecheck Info: File `_main.out' has not changed.
-(rerunfilecheck)             Checksum: CCB19C2309BA7CC083B28EC65B10A116;3358.
- ) 
+! Unable to load picture or PDF file './www/spdgt_logo.png'.
+<to be read again> 
+                   }
+l.103 ...}{\includegraphics{./www/spdgt_logo.png}}
+                                                   
 Here is how much of TeX's memory you used:
- 17049 strings out of 477865
- 318946 string characters out of 5844944
- 771079 words of memory out of 5000000
- 37706 multiletter control sequences out of 15000+600000
+<<<<<<< HEAD
+ 16564 strings out of 477643
+ 304688 string characters out of 5841100
+ 782532 words of memory out of 5000000
+ 37505 multiletter control sequences out of 15000+600000
+ 472841 words of font info for 60 fonts, out of 8000000 for 9000
+=======
+ 17090 strings out of 477865
+ 316133 string characters out of 5846807
+ 771242 words of memory out of 5000000
+ 37742 multiletter control sequences out of 15000+600000
  475710 words of font info for 81 fonts, out of 8000000 for 9000
+>>>>>>> aabdfa1e5b586951fbb44f29b4bdf85335c2552a
  14 hyphenation exceptions out of 8191
- 86i,6n,121p,3141b,420s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 86i,6n,121p,517b,348s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on _main.pdf (62 pages).
+Output written on _main.pdf (4 pages).

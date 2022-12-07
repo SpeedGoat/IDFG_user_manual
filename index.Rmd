@@ -1,4 +1,4 @@
---- 
+---
 title: "Idaho Fish and Game PopR Website User Manual"
 author: "Speedgoat"
 date: "`r Sys.Date()`"
@@ -17,23 +17,20 @@ description: "Documentation for IDFG PopR"
 
 # Introduction
 
-This manual is intended to provide support and guidance for using the 
-[IDFG PopR Website][PopR] to run population models. Models covered here include 
-[Sightability](#sight), [Survival](#surv), and [IPM](#ipm).
+This manual is a support document for the IDFG PopR website, which was created to streamline the process of running population models including [IPM](#ipm), [Sightability](#sight), and [Survival](#surv), as well as a framework for uploading survey [data](#de).
 
-This manual was created by [Speedgoat][spdgt] and [IDFG](https://idfg.idaho.gov/) using [bookdown](https://bookdown.org/).
+At the top right of your page is a help toolbar. From left to right, the question mark brings you to the Speedgoat homepage, the little bug icon allows you to send a bug report to the speedgoat team, the lightbulb icon allows you to send the team an idea you have for a new feature, the broadcast symbol is a link to the speedgoat blog, and the lifering gives direct contact information for Josh and Paul.
 
-Feedback and suggestions for improving the user manual are welcome at [eric.newkirk@speedgoat.io](mailto:eric.newkirk@speedgoat.io?cc=josh.nowak@speedgoat.io&subject=PopR%20Documentation%20Feedback).
+<center>![](./www/index_walk1.png)</center>
+
+Each tool has its own chapter, which includes an Overview, a Walkthrough, and a Reference page for each separate section within the tools. The Overview gives a general description of what a tool is and how it works, as well as hypothetical use cases for the tool. The Walkthrough is a step-by-step guide which explains how to load data and generate analyses with each tool. The Reference page gives a more detailed explanation of each page, as well as how to navigate the various menus.
+
+Words that are [<b>green and bold</b>](#gl){style="color: #086e04;"} can be found in our glossary section at the end of the book, and words that are [<b>blue and bold</b>]{style="color: #196eb0;"} denote icon labels.
+
+This manual was created by [Speedgoat](https://www.speedgoat.io) using [bookdown](https://bookdown.org/).
+
+Feedback and suggestions for improving the user manual are welcome at [wyatt.nielsen\@speedgoat.io](mailto:wyatt.nielsen@speedgoat.io?cc=josh.nowak@speedgoat.io&subject=PopR%20Documentation%20Feedback).
 
 To get started with PopR, visit the [Speedgoat homepage](https://www.speedgoat.io/) and select Idaho from the login menu.
 
-<center>
-
-[![Logo](./www/spdgt_logo.png)][spdgt]
-
-</center>
-
-[PopR]: https://popr.cfc.umt.edu/IDFG/
-[Git]: https://github.com/ericnewkirk/IDFG_user_manual
-[GitIssues]: https://github.com/ericnewkirk/IDFG_user_manual/issues
-[spdgt]: https://www.speedgoat.io
+<center>[![Logo](./www/spdgt_logo.png)](https://www.speedgoat.io)</center>
