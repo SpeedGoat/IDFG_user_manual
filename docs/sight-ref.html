@@ -23,7 +23,7 @@
 <meta name="author" content="Speedgoat" />
 
 
-<meta name="date" content="2022-12-07" />
+<meta name="date" content="2022-12-14" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -180,13 +180,20 @@
 <img src="www/sight_report1.png" />
 </center>
 <p>The Build Report tab prints your model outputs from the tables tab and saves model settings. Clicking the Build Report button will open a popup menu, click the download button to download the file to your machine as an HTML file.</p>
+<p>The sections Settings and Input data have to do with the information you supplied, while the Results section has to do with the information that the model generates.</p>
+<p>The Settings section corresponds to the options you selected in the User Input window of the <a href="sight-ref.html#sight-setup">Setup</a> section.</p>
+<p>Input data summarizes the surveys that the model used to generate estimates. This information can be found in the preview window on the right side of the setup tab, and describes how you grouped your subunits when you flew sightability surveys and what proportion of each group was actually surveyed. Count data is the raw data from each individual flight.</p>
+<p>The Results section displays the outputs of the model, and each subsection (Estimates, Sampling Design, Detection Proababilit, and Covariates) corresponds to the similarly named tab from the <a href="sight-ref.html#sight-table">Tables</a> section.</p>
+<p>The Estimates section gives the model estimates for numbers of animals, seperated into <a href="gl.html#gl-ageratio" style="color: #086e04;"><b>age</b></a> and <a href="gl.html#gl-sexratio" style="color: #086e04;"><b>sex</b></a> classes, as well as ratios comparing the number of males per female (MF Ratio) and the number young per female (YF Ratio.) on average in the study area.</p>
+<p>The Sampling Design section gives a summary of which <a href="gl.html#gl-dau" style="color: #086e04;"><b>DAU</b></a> you worked in, as well as the number of that DAU’s subunits that you sampled.</p>
+<p>Detection Probability’s summary section organizes every group sighting that you had by the likelihood that you were going to see them, based on the number of animals in the group, the type of vegatation they were spotted in, what the animals were doing when they were spotted, and the amount of snowcover at the time. Specific information about these factors is covered in the Covariates section, which I explain in detail in <a href="sight-ref.html#sight-table">Tables</a>.</p>
 </div>
 <div id="sight-admin" class="section level3 hasAnchor" number="3.2.4">
 <h3><span class="header-section-number">3.2.4</span> Admin<a href="sight-ref.html#sight-admin" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <center>
 <img src="www/sight_admin1.png" />
 </center>
-<p>The Admin tab is used to upload the results of your model to your database of choice. The bottom window can be used to preview the data that you plan to upload,so make sure you are comfortable with your results before you upload them to the public database. Data you upload will be incorporated into everyone else’s model runs, so be careful.</p>
+The Admin tab is used to upload the results of your model to your database of choice. The bottom window can be used to preview the data that you plan to upload, so make sure you are comfortable with your results before you upload them to the public database. Data you upload will be incorporated into everyone else’s model runs.
 <center>
 <img src="www/sight_admin2.png" />
 </center>
