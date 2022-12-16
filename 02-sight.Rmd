@@ -3,7 +3,7 @@ title: "Sightability"
 ---
 
 # Sightability {#sight}
-  Sightability models estimate abundance in a unit by combining the number of animals that we have seen in aerial surveys with an estimated number of animals that we have NOT seen using detection probability models. These detection models consider ground vegetation, the animal’s activity, snow cover, and the size of the group of animals to determine the likelihood that an animal is seen with the interference of these variables. 
+  Sightability models estimate abundance in an area by combining the number of animals that we HAVE seen in aerial surveys with the number of animals that we HAVE NOT seen, which is estimated using detection probability models. These detection models consider ground vegetation, the animal’s activity, snow cover, and the size of the group of animals to determine the likelihood that an animal is seen. 
 
   [<b>Stratum</b>](#gl-stratum){style="color: #086e04;"} are used to organize habitat subunits by how well they would work as habitat for the animal being surveyed. The “high” strata group represents subunits that contain the best habitat, “low” is the group that has the worst habitats, and “medium” falls in between. Subunits are determined by previous observations from biologists and snow cover.
 
@@ -27,7 +27,7 @@ Using the Sightability tool can be split into two major processes: preparing dat
 
 ### Reviewing Outputs {#sight-look}
 
-  Now that your data has been prepared you can go to the Tables tab, which is where you can view the output of your model. 
+  Now that your data has been prepared you can go to the Tables tab, where you can view the output of your model. 
   
   <center>![](./www/sight_walk4.png)</center>
   
@@ -35,13 +35,13 @@ Using the Sightability tool can be split into two major processes: preparing dat
   
   <center>![](./www/sight_walk5.png)</center>
   
-  To get a more detailed report of your model that includes the information in the Tables tab while keeping track of things like model settings, click the Build Report tab under Sightability. A prompt will appear asking you to download the report as an html file. 
+  To get a more detailed report of your model that includes the information in the Tables tab while keeping track of model settings, click the Build Report tab under Sightability. A prompt will appear asking you to download the report as an .html file. 
   
    <center>![](./www/sight_walk7.png)</center>
   
   <center>![](./www/ipm_walk9.png)</center>
   
-  If you would like to upload the results of your model to an IPM database, you can click on the Admin tab. 
+  If you would like to upload the results of your model to an IPM database, click on the Admin tab. 
   
   <center>![](./www/sight_walk6.png)</center>
   
@@ -71,7 +71,7 @@ Using the Sightability tool can be split into two major processes: preparing dat
 
   The Tables tab allows you to look at the output of your model run from Setup. 
   
-  The Estimates tab displays model outputs based on your survey information, including abundance estimates for all age and sex demographics as well as Male:Female and Young:Female ratio. You can search each row with the blank box at the top. The Survey Design tab gives model settings for reference, as well as the proportion of subunits sampled and the abundance estimate for the area that you selected in Setup. 
+  The Estimates tab displays model outputs based on your survey information, including abundance estimates for all age and sex demographics as well as Male:Female and Young:Female ratio. You can search each row with the blank box at the top, which allows you to do a keyword search. The Survey Design tab gives model settings for reference, as well as the proportion of subunits sampled and the abundance estimate for the area that you selected in [Setup](#sight-setup). 
   
   The Detection tab gives raw survey info that the model used for its estimates. Notice that the page of data being displayed is only one of many pages which you can navigate with the page list on the bottom right of the window. Use the download button at the bottom of the Estimates and Detections tabs to download those results as a .csv. 
   
