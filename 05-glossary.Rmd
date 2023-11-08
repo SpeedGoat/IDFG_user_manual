@@ -33,7 +33,7 @@ Burnin Length helps us focus our model. When the MCMC model begins running, it c
 A sightability survey which focuses on sex ratios
 
 ###### DAU (Data Analysis Unit) {#gl-dau -}
-Data Analysis Units separate Idaho into distinct management areas for each species. Each one has a specific name and is further divided into subunits, which allow even more specificity.
+Data Analysis Units separate each state or province into distinct management areas for each species. Each one has a specific name and is further divided into subunits, which allow even more specificity.
 
 ###### GRTS (Generalized Random Tesselation Stratified) {#gl-GRTS -}
 GRTS decides where to sample during geographic surveys by ensuring that the locations are both randomly placed and evenly spaced. This helps avoid bias while making sure that no parts of the study area are undersampled.
@@ -66,7 +66,7 @@ The probability that an animal will stay alive for a human-selected period of ti
 Thinning rate helps us save memory by deleting entries from the model's stored runs. We can think of this as a sort of browser history for the model, showing us how it got its answer. In this case there are literally tens of thousands of steps, so deleting a small (or large) proportion of that history and using what is left still gives us an idea of the model's actions without taking up nearly as much memory. The slider is the percentage of model iterations that will be deleted once the modeling process is complete.
 
 ###### Unit {#gl-unit -}
-Another name for a GMU, or Game Management Unit, which is a subdivision of Idaho with its own unique hunting and game regulations managed by Idaho Department of Fish and Game. 
+Another name for a GMU, or Game Management Unit, which is a subdivision of a state or province with its own unique hunting and game regulations. 
 
 ###### Year {#gl-year -}
 The year tab refers to which Biological year the survey was carried out on. Years are referred to as “2016-2017” rather than just one year because surveys are generally carried out between late fall and early spring, which straddles new year’s. This makes more sense to keep related surveys together because two surveys may be flown only three weeks apart but still be lumped into separate years. If you are having trouble finding your survey, make sure you select the right time range, since a survey flown in 2016 could be in the 2015-2016 group OR the 2016-2017 group.

@@ -5,25 +5,25 @@
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>2.1 Walkthrough | Glossary</title>
-  <meta name="description" content="Documentation for IDFG PopR" />
-  <meta name="generator" content="bookdown 0.29 and GitBook 2.6.7" />
+  <meta name="description" content="Documentation for SpeedGoat Software" />
+  <meta name="generator" content="bookdown 0.33 and GitBook 2.6.7" />
 
   <meta property="og:title" content="2.1 Walkthrough | Glossary" />
   <meta property="og:type" content="book" />
   
-  <meta property="og:description" content="Documentation for IDFG PopR" />
+  <meta property="og:description" content="Documentation for SpeedGoat Software" />
   
 
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content="2.1 Walkthrough | Glossary" />
   
-  <meta name="twitter:description" content="Documentation for IDFG PopR" />
+  <meta name="twitter:description" content="Documentation for SpeedGoat Software" />
   
 
 <meta name="author" content="Speedgoat" />
 
 
-<meta name="date" content="2022-12-07" />
+<meta name="date" content="2023-11-08" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -164,7 +164,7 @@
 <img src="www/ipm_walk2.png" />
 </center>
 <p>Once the data is loaded, you should get a popup dialog letting you know that the process was successful. It will also prompt you to proceed to the Structure tab.</p>
-<p>The Structure tab allows you to select whether your survival and reproduction will have a constant or time varying data variance. The defaults were chosen to be well-suited to a variety of situations, so most of the time clicking <span style="color: #196eb0;"><b>“Default Structure”</b></span> will be all you need to do here. Often the inputs that appear when the tool is opened are actually not the same as those that are selected when you press <span style="color: #196eb0;"><b>“Default Structure”</b></span>, so make sure you click that before you move on to Harvest if those are the inputs you are planning to use.</p>
+<p>The Structure tab allows you to select the model structure used in the analysis. For some agencies, the use of population reconstruction or other structural components may be available as structural options. The primary set-up options are to define whether your survival and reproduction will vary annually or be constant. The defaults were chosen to be well-suited to the specific species selected, so most of the time clicking <span style="color: #196eb0;"><b>“Default Structure”</b></span> is a good start for your analysis. The inputs that appear when the tool is opened may not revert to the species specific defaults so clicking on <span style="color: #196eb0;"><b>“Default Structure”</b></span>, will make sure you have selected the defaults before you move on to Harvest.</p>
 <center>
 <img src="www/ipm_walk4.png" />
 </center>
@@ -181,7 +181,7 @@
 <div id="ipm-look" class="section level3 hasAnchor" number="2.1.2">
 <h3><span class="header-section-number">2.1.2</span> Reviewing Outputs<a href="ipm-model.html#ipm-look" class="anchor-section" aria-label="Anchor link to header"></a></h3>
 <p><b>(NOTE: This section will only work if you completed the steps above to prepare your data and fit your model beforehand.</b>)</p>
-<p>To look at the data you prepared, wait until the model that you initiated in the setup tab has finished running, then go ahead and click the Plots tab on the IPM dropdown menu to check the results. Hovering your mouse over a point on a plot will give you the parameter, year, age, sex, control limits, and mean associated with the dataset that created the data point.</p>
+<p>To look at the model output, wait until the model that you initiated in the setup tab has finished running, then go ahead and click the Plots tab on the IPM dropdown menu to check the results. Hovering your mouse over a point on a plot will give you the parameter, year, age, sex, control limits, and mean associated with the dataset that created the data point. These plots also contain the analogous data from the IPM inputs, so you can compare the model output with the data that was provided as inputs to the model.</p>
 <center>
 <img src="www/ipm_walk7.png" />
 </center>

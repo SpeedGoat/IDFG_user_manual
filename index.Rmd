@@ -1,5 +1,5 @@
 ---
-title: "Idaho Fish and Game PopR Website User Manual"
+title: "SpeedGoat Software User Manual"
 author: "Speedgoat"
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
@@ -12,12 +12,12 @@ documentclass: book
 bibliography: [book.bib, packages.bib]
 biblio-style: apalike
 link-citations: yes
-description: "Documentation for IDFG PopR"
+description: "Documentation for SpeedGoat Software"
 ---
 
 # Introduction
 
-This manual is a support document for the IDFG PopR website, which was created to streamline the process of running population models including [IPM](#ipm), [Sightability](#sight), and [Survival](#surv), as well as a framework for uploading survey [data](#de).
+This manual is a support document for SpeedGoat Software, which was created to streamline the process of running population models including [IPM](#ipm), [Sightability](#sight), and [Survival](#surv), as well as a framework for uploading survey [data](#de). You may notice that some of the tools that are documented here are not available on your version of the software. This is because your agency may not be using all of the tools that Speedgoat has to offer. Also, please note that each agency may collect and use different data, so your agency will have seperate data and model documentation that walks through agency specific data processing steps and custom models.
 
 At the top right of your page is a help toolbar. From left to right, the question mark brings you to the Speedgoat homepage, the little bug icon allows you to send a bug report to the speedgoat team, the lightbulb icon allows you to send the team an idea you have for a new feature, the broadcast symbol is a link to the speedgoat blog, and the lifering gives direct contact information for Josh and Paul.
 
@@ -31,6 +31,6 @@ This manual was created by [Speedgoat](https://www.speedgoat.io) using [bookdown
 
 Feedback and suggestions for improving the user manual are welcome at [wyatt.nielsen\@speedgoat.io](mailto:wyatt.nielsen@speedgoat.io?cc=josh.nowak@speedgoat.io&subject=PopR%20Documentation%20Feedback).
 
-To get started with PopR, visit the [Speedgoat homepage](https://www.speedgoat.io/) and select Idaho from the login menu.
+To get started with SpeedGoat Software, visit the [Speedgoat homepage](https://www.speedgoat.io/) and select your agency from the login menu.
 
 <center>[![Logo](./www/spdgt_logo.png)](https://www.speedgoat.io)</center>
